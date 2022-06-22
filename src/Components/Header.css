@@ -1,0 +1,76 @@
+ .Krushna53-header {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+     justify-content: space-around;
+     background: #fff;
+     max-width: 100%;
+ }
+
+ .Krushna53-logo {
+     margin: 1rem 1rem;
+ }
+
+ .Krushna53-logo img {
+     max-width: 108px;
+     height: auto;
+ }
+
+ .Krushna53-navbar {
+     display: flex;
+     margin: auto;
+ }
+
+ .Krushna53-navbar li {
+     display: inline-block;
+     margin-left: 1.8rem;
+     border-radius: 0.2rem;
+     -webkit-border-radius: 0.2rem;
+     -moz-border-radius: 0.2rem;
+     -ms-border-radius: 0.2rem;
+     -o-border-radius: 0.2rem;
+ }
+
+ .Krushna53-navbar li a {
+     text-decoration: none;
+     font-size: 1.2rem;
+     color: #384baf;
+ }
+
+ .Krushna53-navbar li a:hover {
+
+     color: #8c3a29;
+ }
+
+ .Krushna53-navbar li a i,
+ .Krushna53-header .Krushna53-Con-button button i {
+     margin: 0px 5px;
+ }
+
+ .Krushna53-header .Krushna53-Con-button {
+     margin: 2rem 2rem;
+ }
+
+ .Krushna53-header .Krushna53-Con-button button {
+     background: #efa92a;
+     color: #384baf;
+     padding: 1rem;
+     border-radius: 0.2rem;
+     font-size: 1.2rem;
+     border: none;
+     cursor: pointer;
+     -webkit-border-radius: 0.2rem;
+     -moz-border-radius: 0.2rem;
+     -ms-border-radius: 0.2rem;
+     -o-border-radius: 0.2rem;
+ }
+
+ .Krushna53-header .Krushna53-Con-button button:hover {
+     border: 2px solid #8eb653;
+
+     background: linear-gradient(54deg, #72a725, #efa92af2, #8c3a297a);
+     color: #8c3a29;
+
+ }
