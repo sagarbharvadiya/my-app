@@ -139,14 +139,14 @@
     .Krushna53-header {
         max-width: 100%;
         height: 100%;
-        position: fixed;
+        /* position: fixed; */
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         background-color: white;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         z-index: 3;
     }
 
@@ -256,17 +256,7 @@
     .Krushna53-header .Krushna53-Con-button {
         margin: 2rem 2rem 2rem 2rem;
     }
-/*  */
-.Krushna53-navbar{
-    display: none;
-}
-.hamburger-menu{
-    display: block !important;
-}
-.mobile-menu-links{
-    position: relative;
-    display: block;z-index: 999;
-}
+
 
 }
 

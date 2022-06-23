@@ -9,14 +9,14 @@
     margin: 55px 0px;
 }
 
-.gallery-container {
+/* .gallery-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     gap: 50px;
     max-width: 600px;
-}
+} */
 
 .Krushna53-gallery h2 {
     text-align: center;
@@ -24,36 +24,13 @@
     font-size: 28px;
 }
 
-.slick-prev {
-    left: -79px !important;
-    color: #fff !important;
-    background: black !important;
-}
-
-.slick-next {
-    right: -80px;
-    color: #fff !important;
-    background: black !important;
-}
-
-.slick-next,
-.slick-prev {
-    font-size: 0px !important;
-    line-height: 0 !important;
-    top: 20% !important;
-    max-width: 26px !important;
-    height: 30px !important;
-    transform: translate(0px, 50%) !important;
-    cursor: pointer;
-    color: #c5383800 !important;
-    outline: 0px !important;
-    -webkit-transform: translate(0px, 50%) !important;
-    -moz-transform: translate(0px, 50%) !important;
-    -ms-transform: translate(0px, 50%) !important;
-    -o-transform: translate(0px, 50%) !important;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    flex-wrap: wrap;
+  }
+  .logo-section img{
+    max-width: 140px;
+  }

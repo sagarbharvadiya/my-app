@@ -1,7 +1,7 @@
 import React  from "react";
 import './Banner.css';
 import './Mobile.css';
-import blank from "../img/blank.jpg";
+import blank from "../img/banner.jpg";
 
 function Banner(){
     return(
