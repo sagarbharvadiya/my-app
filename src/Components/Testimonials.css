@@ -42,3 +42,14 @@
     -o-border-radius: 100%;
     margin-left: 50px;
 }
+
+/*  */
+@media screen and (max-width: 767px) {
+.Krushna53-Testimonials-img {
+    max-width: 100%;
+}
+.Krushna53-Testimonials-img img {
+    max-width: 100%;
+    margin-left: 0px;
+}
+}

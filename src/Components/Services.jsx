@@ -1,9 +1,10 @@
 import React from "react";
 import './Services.css';
 import './Mobile.css';
-import img1 from "../img/image1.png";
-import img2 from "../img/image2.png";
-import img3 from "../img/image3.png";
+import img1 from "../img/HTML-PHP-JS.webp";
+import img2 from "../img/CMS-DRUPAL.webp";
+import img3 from "../img/wordpress.jpg";
+import img4 from "../img/wordpress1.webp"
 function Services(){
     return(
         <>
@@ -24,7 +25,7 @@ function Services(){
                         <h2>Services</h2>
                     </div>
                     <div className="blog-image">
-                        <img src={img3} alt="..."/>
+                        <img src={img4} alt="..."/>
                         <h2>Services</h2>
                     </div>
                 </div>

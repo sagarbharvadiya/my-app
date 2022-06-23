@@ -37,3 +37,13 @@
     color: blue;
     font-size: 24px;
 }
+/*  */
+@media screen and (max-width: 767px) {
+.blog-left {
+    max-width: 100%;
+    padding: 0px;
+}
+.blog-right {
+    max-width: 100%;
+}
+}

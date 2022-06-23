@@ -41,3 +41,18 @@
     color: blue;
     font-size: 24px;
 }
+
+
+
+@media screen and (max-width: 767px) {
+    .Krushna53-AboutUs-flex {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .blank-img {
+        max-width: 323px;
+        height: auto;
+        border-radius: 5px;
+    }
+}

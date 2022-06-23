@@ -1,7 +1,7 @@
 import React from "react";
 import './About-us.css';
 import './Mobile.css';
-import blank from "../img/blank.jpg";
+import blank from "../img/13038.jpg";
 function AboutUs(){
     return(
         <>

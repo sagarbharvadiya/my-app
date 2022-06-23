@@ -61,7 +61,7 @@
      color: #384baf;
      padding: 1rem;
      border-radius: 0.2rem;
-     font-size: 1.2rem;
+     /* font-size: 1.2rem; */
      border: none;
      cursor: pointer;
      -webkit-border-radius: 0.2rem;
@@ -113,7 +113,7 @@
       display: block;
       list-style: none;
       left: 0;
-      top: 75px;
+      top: 10px;
       transition: all 0.5s ease-out;
       -webkit-transition: all 0.5s ease-out;
       -moz-transition: all 0.5s ease-out;

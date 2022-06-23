@@ -52,11 +52,24 @@
 }
 
 .Krushna53-banner-img img {
-    max-width: 400px;
+    max-width: 40rem;
     height: auto;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
+    /* border-radius: 100%; */
+    
+}
+
+
+/*  */
+@media screen and (max-width: 767px) {
+    .Krushna53-banner {
+       
+        flex-direction: column;
+    }
+    .Krushna53-paragraph{
+        max-width: 100%;
+    }
+    .Krushna53-banner-img img{
+        max-width: 25rem;
+        margin: 0px;
+    }
 }
