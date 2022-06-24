@@ -9,7 +9,7 @@ function Clients() {
             <div className=" container-fluid">
                 <div className="">
                     <div className="commonWidth Krushna53-Clients" id="Clients">
-                        <h2>Our happy Clients</h2>
+                        <h2 className="commonTitleFontSize">Our happy Clients</h2>
                         <div className="gallery-container">
                             <div className='logo-section'>
                                 {

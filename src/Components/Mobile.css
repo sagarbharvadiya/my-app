@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+body{
+    font-family: 'Inter', sans-serif !important;
+}
+.commonTitleFontSize{
+    font-size: 2.3rem !important;
+    color: #000;
+    font-weight: 700;
+    padding: 1rem 0rem;
+}
+p{
+    font-size: 1rem !important;
+    color: rgb(100, 98, 98)!important;
+}
 .hamburger-menu{
     display: none;
 }

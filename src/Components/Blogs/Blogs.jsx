@@ -9,7 +9,7 @@ function Blogs() {
             <div className="container-fluid">
                     <div className="commonWidth blog-section d-lg-flex justify-content-between p-lg-5 p-md-2 p-sm-0  d-sm-block d-md-block" id="blog">
                         <div className="blog-left d-flex flex-column">
-                            <h2>Blogs</h2>
+                            <h2 className="commonTitleFontSize">Blogs</h2>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                                 been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                                 galley of type and scrambled it to make a type
