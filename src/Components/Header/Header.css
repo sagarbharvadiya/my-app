@@ -4,7 +4,7 @@
      display: flex;
      -webkit-box-pack: justify;
      -ms-flex-pack: justify;
-     justify-content: space-around;
+     justify-content: space-between;
      background: #fff;
      max-width: 100%;
      
@@ -22,6 +22,7 @@
  .Krushna53-navbar {
      display: flex;
      margin: auto;
+     align-items: center;
  }
 .nav-links{
   margin:auto;
@@ -53,7 +54,7 @@
  }
 
  .Krushna53-header .Krushna53-Con-button {
-     margin: 2rem 2rem;
+  margin-left: 4rem;
  }
 
  .Krushna53-header .Krushna53-Con-button button {
@@ -154,5 +155,10 @@
     flex-direction: column;
     z-index: 3;
 }
-  }
-  
+.Krushna53-header ul {
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99;
+}
+}

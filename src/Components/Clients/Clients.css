@@ -34,3 +34,25 @@
   .logo-section img{
     max-width: 140px;
   }
+
+  @media screen and (max-width: 767px) {
+  .logo-section{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+.image-folder {
+    padding: 2rem 0rem;
+}
+.image-folder img {
+    /* max-width: 100%; */
+    width: 100%;
+    padding: 1rem 0rem;
+}
+.gallery-container {
+    max-width: 100%;
+}
+
+  }

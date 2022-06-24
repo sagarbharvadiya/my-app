@@ -4,7 +4,7 @@
 
 .Krushna53-AboutUs-flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
 }
 
@@ -47,12 +47,15 @@
 @media screen and (max-width: 767px) {
     .Krushna53-AboutUs-flex {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-direction: column;
     }
     .blank-img {
-        max-width: 323px;
+        max-width: 100%;
         height: auto;
         border-radius: 5px;
+    }
+    .Krushna53-AboutUs {
+        margin: 78px 0px;
     }
 }

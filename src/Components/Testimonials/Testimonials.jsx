@@ -4,20 +4,24 @@ import '../Mobile.css';
 import blank1 from '../img/removebg.png';
 
 function Testimonials(params) {
-    return(
+    return (
         <>
-        <div class="commonWidth Krushna53-Testimonials" id="Tesimonials">
-            <div class=" Krushna53-Testimonials-img">
-                <img src={blank1} alt="blank"/>
+            <div className="container-fluid">
+                <div className="">
+                    <div class="commonWidth Krushna53-Testimonials" id="Tesimonials">
+                        <div class=" Krushna53-Testimonials-img">
+                            <img src={blank1} alt="blank" />
+                        </div>
+                        <div class="Krushna53-Testimonials-paragraph">
+                            <h1>Testimonials</h1>
+                            <p>Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour
+                                randomised words.Vivamus magna justo, laconia eger consectetur sed, convallis at tellus. Curabitur
+                                arcu
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="Krushna53-Testimonials-paragraph">
-                <h1>Testimonials</h1>
-                <p>Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour
-                    randomised words.Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur
-                    arcu
-                </p>
-            </div>
-        </div>
         </>
     )
 };

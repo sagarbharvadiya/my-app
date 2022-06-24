@@ -7,7 +7,7 @@ function Footer(params) {
         <>
             <div class="commonWidth footer-section">
                 <div class="footerwrapper">
-                    <div class="logo"><img src={logo} alt="..."/></div>
+                    <div class="logo"><img src={logo} alt="..." /></div>
                     <p>Copyright All Rights Reserved</p>
                     <div class="footer-icons">
                         <a href="#" class="footer-icon"><i class="ri-whatsapp-line icon"></i></a>
