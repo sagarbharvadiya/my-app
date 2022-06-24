@@ -1,6 +1,6 @@
 import React from "react";
 import './Services.css';
-import './Mobile.css';
+import '../Mobile.css';
 import img1 from "../img/HTML-PHP-JS.webp";
 import img2 from "../img/CMS-DRUPAL.webp";
 import img3 from "../img/wordpress.jpg";

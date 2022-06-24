@@ -1,8 +1,8 @@
 import React from "react";
 import './Clients.css';
-import './Mobile.css';
-import clients from '../img/happy_clients.png';
-import Sdata from './Sdata';
+import '../Mobile.css';
+// import clients from '../img/happy_clients.png';
+import Sdata from '../Sdata';
 function Clients() {
     return(
         <>

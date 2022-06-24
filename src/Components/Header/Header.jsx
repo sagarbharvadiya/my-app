@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import logo from "../img/logo.png";
 import './Header.css';
-import './Mobile.css';
+import '../Mobile.css';
 
 
 function Header() {

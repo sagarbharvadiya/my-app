@@ -1,6 +1,6 @@
 import React from "react";
 import './Testimonials.css';
-import './Mobile.css';
+import '../Mobile.css';
 import blank1 from '../img/removebg.png';
 
 function Testimonials(params) {

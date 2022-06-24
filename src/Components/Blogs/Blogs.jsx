@@ -1,6 +1,6 @@
 import React from "react";
 import './Blogs.css';
-import './Mobile.css';
+import '../Mobile.css';
 import img1 from "../img/image1.png";
 
 function Blogs() {
