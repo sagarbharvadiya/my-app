@@ -99,7 +99,11 @@
     /* padding    : 8px 2px; */
     text-transform: none;
   }
-
+.Krushna53-Con-button a{
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 400;
+}
   
   .mobile-menu-icon {
     display: none;

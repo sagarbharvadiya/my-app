@@ -25,11 +25,11 @@ function Header() {
                             <ul className="menu nav-links Krushna53-navbar">
                                 <li><a href="#home"><i className="fa fa-home"></i>Home</a></li>
                                 <li><a href="#About"><i className="fa fa-info-circle" aria-hidden="true"></i>About</a></li>
-                                <li><a href="#service"><i className="fa fa-wrench" aria-hidden="true"></i>Service</a></li>
+                                <li><a href="#service"><i className="fa fa-wrench" aria-hidden="true"></i>Services</a></li>
                                 <li><a href="#Clients"><i className="fa fa-user" aria-hidden="true"></i>Our Clients</a></li>
-                                <li><a href="#blog"><i className="fa-solid fa-blog"></i>Blog</a></li>
+                                {/* <li><a href="#blog"><i className="fa-solid fa-blog"></i>Blog</a></li> */}
                         <div className="Krushna53-Con-button">
-                            <button><i className="fa fa-phone" aria-hidden="true"></i>Contact Now</button>
+                            <button><i className="fa fa-phone" aria-hidden="true"></i><a href="http://bit.ly/chat-krushna53" target="_blank">Contact Now</a></button>
                         </div>
                             </ul>
                         </div>

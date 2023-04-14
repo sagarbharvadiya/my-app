@@ -10,11 +10,11 @@ function Banner() {
                 <div className="">
                     <div className="commonWidth Krushna53-banner" id="home">
                         <div className="Krushna53-paragraph">
-                            <h1>Lorem Ipsum</h1>
+                            <h1>Krushna53</h1>
                             <p>We offer web development services and leverage Drupal to provide services in different domains like E-commerce, marketing and nonprofits.
                             </p>
                             <div className="Krushna53-Con-button btn-box">
-                                <a href="#home" className="btn-1"><button>Know More </button></a>
+                                <a href="http://bit.ly/chat-krushna53" target="_blank" rel="noreferrer" className="btn-1"><button>Know More </button></a>
                             </div>
                         </div>
                         <div className=" Krushna53-banner-img">

@@ -15,16 +15,17 @@ function Services() {
                             <div className="service-text commonTitleFontSize">Services</div>
                             <div className="service-blog">
                                 <div className="blog-image">
-                                    <img src={img1} alt="..." />
-                                    <h2>E-commerce</h2>
+                                <img src={img2} alt="..." />
+                                    
+                                    <h2>Drupal Development</h2>
                                 </div>
                                 <div className="blog-image">
-                                    <img src={img2} alt="..." />
-                                    <h2>Development</h2>
+                                <img src={img1} alt="..." />
+                                    <h2>Web Application Development</h2>
                                 </div>
                                 <div className="blog-image">
                                     <img src={img3} alt="..." />
-                                    <h2>Project Management</h2>
+                                    <h2>Support & Maintenance</h2>
                                 </div>
                                 <div className="blog-image">
                                     <img src={img4} alt="..." />

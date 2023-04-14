@@ -10,10 +10,10 @@ function Footer(params) {
                     <div class="logo"><img src={logo} alt="..." /></div>
                     <p>Copyright All Rights Reserved</p>
                     <div class="footer-icons">
-                        <a href="#" class="footer-icon"><i class="ri-whatsapp-line icon"></i></a>
-                        <a href="#" class="footer-icon"><i class="fas fa-envelope icon"></i></a>
+                        <a href="http://bit.ly/chat-krushna53" target="_blank" rel="noreferrer" class="footer-icon"><i class="ri-whatsapp-line icon"></i></a>
+                        <a href="mailto:harshal.pradhan@krushna53.com" class="footer-icon"><i class="fas fa-envelope icon"></i></a>
                         {/* <a href="#" class="footer-icon"><i class="ri-instagram-line icon"></i></a> */}
-                        <a href="#" class="footer-icon"><i class="ri-linkedin-box-fill icon"></i></a>
+                        <a href="https://www.linkedin.com/company/krushna53" target="_blank" rel="noreferrer" class="footer-icon"><i class="ri-linkedin-box-fill icon"></i></a>
                     </div>
                 </div>
             </div>

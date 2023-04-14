@@ -14,10 +14,15 @@ function Testimonials(params) {
                         </div>
                         <div class="Krushna53-Testimonials-paragraph">
                             <h2 className="commonTitleFontSize">Testimonials</h2>
-                            <p>Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour
-                                randomised words.Vivamus magna justo, laconia eger consectetur sed, convallis at tellus. Curabitur
-                                arcu
-                            </p>
+                            <h6>“Excellent experience with Harshal for many years now.  He is a PHP/Drupal expert and can build and fix anything!  Very reliable and great communication as well.”</h6>
+                            <p>-  Danielle Smith-Dino</p>
+                          
+            
+            
+                            <h6>“Harshal performed a very tricky Drupal 6 to Drupal 7 upgrade for me with success.
+                                He worked diligently to get the project done quickly.
+                                I recommend Harshal for any Drupal work you have.”</h6>
+                                <p>-  Chapman Wodriff</p>
                         </div>
                     </div>
                 </div>
