@@ -35,7 +35,10 @@
     max-width: 490px;
     height: auto;
     border-radius: 5px;
+    aspect-ratio: 6/5;
+    object-fit: contain;
 }
+
 .read-more {
     text-decoration: none;
     color: blue;
@@ -50,11 +53,13 @@
         justify-content: space-between;
         flex-direction: column;
     }
+
     .blank-img {
         max-width: 100%;
         height: auto;
         border-radius: 5px;
     }
+
     .Krushna53-AboutUs {
         margin: 78px 0px;
     }
