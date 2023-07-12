@@ -386,4 +386,17 @@ p {
     .Krushna53-Testimonials p {
         margin: 0px 0px 0px 0px;
     }
+    .contact .d_flex{
+        display: block;
+    }
+    .contact iframe{
+        width: 100%;
+    }
+    .blog-image{
+        width: 100% !important;
+
+    }
+    .blog-image p{
+        padding: 0 5px !important;
+    }
 }

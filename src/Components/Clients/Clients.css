@@ -6,18 +6,7 @@
 .Krushna53-Clients h2 {
     font-size: 28px;
     text-align: center;
-    margin: 55px 0px;
 }
-
-/* .gallery-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    gap: 50px;
-    max-width: 600px;
-} */
-
 .Krushna53-gallery h2 {
     text-align: center;
     margin: 55px 0px;
@@ -26,16 +15,17 @@
 
 .logo-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 40px 100px;
+    /* padding: 40px 100px; */
     flex-wrap: wrap;
+    padding: 40px 0;
 }
 
 .logo-section img {
     width: 100%;
     /* height: 100%; */
-    aspect-ratio: 5/1;
+    aspect-ratio: 6/1;
     object-fit: contain;
     height: 50%;
     filter: grayscale(100%);
@@ -48,7 +38,6 @@
 }
 
 .image-folder {
-    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +46,7 @@
     overflow: hidden;
     background: #fff;
     height: 125px;
+    margin: 5px 0;
 }
 
 @media screen and (max-width: 767px) {
