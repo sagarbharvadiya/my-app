@@ -16,27 +16,27 @@ const Technologies = () => {
 
   return (
     <>
-      <section className="Technologies">
-        <div className="container-fluid">
-          <div className="technologies_text commonTitleFontSize">
-            Technologies
-          </div>
+      <div className="commonWidth">
+        <div className="technologies_text commonTitleFontSize">
+          Technologies
+        </div>
+        <section className="Technologies">
           <div className="d_flex">
             {data.Technologies.map((d, i) => (
               <div className="wrapper" key={i}>
-              <svg width="100" height="100">
-                <image
-                  xlinkHref={d.img}
-                  alt={d.img}
-                  width="100%"
-                  height="100%"
-                />
-              </svg>
+                <svg width="100" height="100">
+                  <image
+                    xlinkHref={d.img}
+                    alt={d.img}
+                    width="100%"
+                    height="100%"
+                  />
+                </svg>
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 };

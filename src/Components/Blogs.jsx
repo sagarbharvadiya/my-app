@@ -1,12 +1,10 @@
 import React from "react";
-import './Blogs.css';
-import '../Mobile.css';
-import img1 from "../img/image1.png";
+import img1 from "./img/image1.png";
 
 function Blogs() {
     return (
         <>
-            <div className="container-fluid">
+            <div className="commonWidth ">
                     <div className="commonWidth blog-section d-lg-flex justify-content-between p-lg-5 p-md-2 p-sm-0  d-sm-block d-md-block" id="blog">
                         <div className="blog-left d-flex flex-column">
                             <h2 className="commonTitleFontSize">Blogs</h2>

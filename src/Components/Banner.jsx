@@ -1,14 +1,12 @@
 import React from "react";
-import './Banner.css';
-import '../Mobile.css';
-import blank from "../img/banner.jpg";
+import blank from "../img/banner.png";
 
 function Banner() {
     return (
         <>
-            <div className=" container-fluid">
+            <div className="commonWidth">
                 <div className="">
-                    <div className="commonWidth Krushna53-banner" id="home">
+                    <div className="Krushna53-banner" id="home">
                         <div className="Krushna53-paragraph">
                             <h1>Krushna53</h1>
                             <p>We offer web development services and leverage Drupal to provide services in different domains like E-commerce, marketing and nonprofits.

@@ -2,7 +2,7 @@
     "Technologies": [
         {
             "id": "1",
-            "img": "/images/react.svg"
+            "img": "/images/Group 4.png"
         },
         {
             "id": "2",
@@ -30,15 +30,41 @@
         },
         {
             "id": "8",
-            "img": "/images/netlify.svg"
+            "img": "/images/Group 3.png"
         },
         {
             "id": "9",
-            "img": "/images/figma.svg"
+            "img": "/images/Group 2.png"
         },
         {
             "id": "10",
-            "img": "/images/gatsby.svg"
+            "img": "/images/Group 1.png"
+        }
+    ],
+    "Clients": [
+        {
+            "id": "1",
+            "image": "/images/logo1.png"
+        },
+        {
+            "id": "2",
+            "image": "/images/nav_logo2.png"
+        },
+        {
+            "id": "3",
+            "image": "/images/itaa (1).jpeg"
+        },
+        {
+            "id": "4",
+            "image": "/images/logo6.png"
+        },
+        {
+            "id": "5",
+            "image": "/images/spacebase-logo-300x300-1.jpg"
+        },
+        {
+            "id": "6",
+            "image": "/images/Logo_001.1957aa1c.png"
         }
     ]
 }

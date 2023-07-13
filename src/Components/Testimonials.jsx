@@ -1,18 +1,16 @@
 import React from "react";
-import './Testimonials.css';
-import '../Mobile.css';
-import blank1 from '../img/removebg.png';
+import blank1 from './img/removebg.png';
 
 function Testimonials(params) {
     return (
         <>
-            <div className="container-fluid">
+            <div className="commonWidth ">
                 <div className="">
-                    <div class="commonWidth Krushna53-Testimonials" id="Tesimonials">
-                        <div class=" Krushna53-Testimonials-img">
+                    <div className="commonWidth Krushna53-Testimonials" id="Tesimonials">
+                        <div className=" Krushna53-Testimonials-img">
                             <img src={blank1} alt="blank" />
                         </div>
-                        <div class="Krushna53-Testimonials-paragraph">
+                        <div className="Krushna53-Testimonials-paragraph">
                             <h2 className="commonTitleFontSize">Testimonials</h2>
                             <h6>“Excellent experience with Harshal for many years now.  He is a PHP/Drupal expert and can build and fix anything!  Very reliable and great communication as well.”</h6>
                             <p>-  Danielle Smith-Dino</p>

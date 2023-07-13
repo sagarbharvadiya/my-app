@@ -1,13 +1,10 @@
 import React from "react";
-import './About-us.css';
-import '../Mobile.css';
-import blank from "../img/13038.jpg";
+import blank from "../img/13038.png";
 function AboutUs() {
     return (
         <>
-            <div className=" container-fluid">
-                <div className="">
-                    <div className="commonWidth Krushna53-AboutUs" id="About">
+            <div className="commonWidth ">   
+                    <div className="Krushna53-AboutUs" id="About">
                         <div className=" Krushna53-AboutUs-flex">
                             <div className="aboutus-image">
                                 <img src={blank} alt="blank" className="blank-img" />
@@ -22,8 +19,7 @@ function AboutUs() {
                                 {/* <a href="#About" className="read-more">Read more.</a> */}
                             </div>
                         </div>
-                    </div>
-                </div>
+                  </div>    
             </div>
         </>
     )
