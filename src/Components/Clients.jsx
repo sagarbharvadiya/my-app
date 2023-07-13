@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Clients() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 2000,
     slidesToShow: 4,
@@ -41,8 +41,7 @@ function Clients() {
 
   return (
     <div className="commonWidth">
-      <div className="">
-        <div className="commonWidth Krushna53-Clients" id="Clients">
+        <div className="Krushna53-Clients" id="Clients">
           <h2 className="commonTitleFontSize">Our clients</h2>
           <div className="gallery-container">
             <Slider {...settings}>
@@ -53,7 +52,6 @@ function Clients() {
               ))}
             </Slider>
           </div>
-        </div>
       </div>
     </div>
   );

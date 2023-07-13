@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import emailjs from '@emailjs/browser';
-// import "./ContactForm.css";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -25,18 +24,19 @@ const ContactForm = () => {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
-        "YOUR_USER_ID"
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
-        () => {
+        (response) => {
           setIsSent(true);
           setName("");
           setEmail("");
           setMessage("");
           setError("");
+          console.log("Email sent:", response);
         },
         (error) => {
           console.error("Failed to send the email:", error);
@@ -47,7 +47,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form-container">
-        <div className="contact_text commonTitleFontSize">Contact Us</div>
+      <div className="contact_text commonTitleFontSize">Contact Us</div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>

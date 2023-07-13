@@ -6,9 +6,9 @@ const OurTeam = () => {
   return (
     <>
       <section className="team" id="team">
-        <div className="container">
+        <div className="commonWidth">
           <div className="title">
-          <h2 class="commonTitleFontSize">Our Team</h2>
+          <h2 className="commonTitleFontSize">Our Team</h2>
           </div>
           <div className="team_image">
             <div className="image1">
