@@ -3,14 +3,14 @@ import './style.css'
 import Banner from './Components/Banner';
 import AboutUs from './Components/About-us';
 import Services from './Components/Services';
-// import Blogs from './Components/Blogs';
 import Clients from './Components/Clients';
-// import Testimonials from './Components/Testimonials';
 import Footer from './Components/Footer';
 import Technologies from './Components/Technologies';
 import OurTeam from './Components/OurTeam';
 import Contact from './Components/Contact';
 import NewHeader from './Components/NewHeadr';
+import SomeOfOurWork from './Components/SomeofOurWork';
+
 
 function App() {
     return (
@@ -20,10 +20,9 @@ function App() {
             <AboutUs />
             <Services />
             <Technologies />
-            {/* <Blogs/> */}
+            <SomeOfOurWork />
             <Clients />
             <OurTeam />
-            {/* <Testimonials/> */}
             <Contact />
             <Footer />
         </>

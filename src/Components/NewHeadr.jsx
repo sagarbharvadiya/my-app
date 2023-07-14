@@ -1,14 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../img/logo.png";
 
 function NewHeader() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(""); // State for active menu item
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+
+  const changeBackground = () => {
+    if (window.scrollY >= 40) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  const handleSetActiveMenu = (menu) => {
+    setActiveMenu(menu);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={navbar ? "header active" : "header"}>
       <div className="header__logo">
         <a href="/">
           <img src={logo} alt="logo" />
@@ -18,19 +40,49 @@ function NewHeader() {
         <nav className={`header__nav ${isNavOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a
+                href="#home"
+                className={activeMenu === "home" ? "active" : ""}
+                onClick={() => handleSetActiveMenu("home")}
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="#About">About</a>
+              <a
+                href="#About"
+                className={activeMenu === "about" ? "active" : ""}
+                onClick={() => handleSetActiveMenu("about")}
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="#service">Services</a>
-            </li> 
-            <li>
-              <a href="#Clients">Our Clients</a>
+              <a
+                href="#service"
+                className={activeMenu === "services" ? "active" : ""}
+                onClick={() => handleSetActiveMenu("services")}
+              >
+                Services
+              </a>
             </li>
             <li>
-              <a href="#team">Our Team</a>
+              <a
+                href="#Clients"
+                className={activeMenu === "clients" ? "active" : ""}
+                onClick={() => handleSetActiveMenu("clients")}
+              >
+                Our Clients
+              </a>
+            </li>
+            <li>
+              <a
+                href="#team"
+                className={activeMenu === "team" ? "active" : ""}
+                onClick={() => handleSetActiveMenu("team")}
+              >
+                Our Team
+              </a>
             </li>
           </ul>
           <div className="social show_mobile">
