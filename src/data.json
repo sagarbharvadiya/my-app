@@ -81,19 +81,19 @@
         {
             "id": 1,
             "img": "/images/saata.jpg",
-            "title": "SAATA",
+            "title": "Converting a Wordpress website to Contentful/ReactJs Website",
             "link": "/"
         },
         {
             "id": 2,
             "img": "/images/oneplus.jpg",
-            "title": "OnePlus Marketing",
+            "title": "Built a Single Page Website on ReactJs",
             "link": "/"
         },
         {
             "id": 3,
             "img": "/images/epta.jpg",
-            "title": "Epta-layers",
+            "title": "Built  Website on Gatsby",
             "link": "/"
         }
     ]

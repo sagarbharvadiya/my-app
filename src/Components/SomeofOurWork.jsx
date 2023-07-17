@@ -10,9 +10,9 @@ const SomeOfOurWork = () => {
         <section className="some_work">
           {data.some_work.map((d, i) => {
             return (
-              <>
+              <React.Fragment key={d.id}>
                 <a href={d.link} className="work_main">
-                  <div className="work" key={i}>
+                  <div className="work">
                     <div className="image">
                       <img src={d.img} alt="mockup-saata" />
                     </div>
@@ -24,7 +24,7 @@ const SomeOfOurWork = () => {
                     </div>
                   </div>
                 </a>
-              </>
+              </React.Fragment>
             );
           })}
         </section>

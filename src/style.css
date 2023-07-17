@@ -399,12 +399,11 @@ section.team,
 }
 
 .service-blog {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
-  margin: 5px 0;
-  flex-wrap: wrap;
 }
 
 .blog-image img {
@@ -686,7 +685,7 @@ section.team,
 .work_main {
   max-width: 100%;
   width: 457px;
-  height: auto;
+  height: 410px;
 }
 
 .some_work .image {
@@ -737,25 +736,21 @@ section.team,
 }
 
 .gallery-container {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Three columns in the grid */
+  grid-gap: 10px;
+  /* Optional gap between the boxes */
 }
 
 .image-folder {
+  border: 1px solid #e0e5e4;
   width: 335px;
-  margin: auto;
+  margin: 10px auto;
   text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
-  .service-blog {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .blog-image img {
     display: flex;
     flex-wrap: wrap;
@@ -812,7 +807,6 @@ section.team,
   }
 
   .blank-img {
-    /* margin: 0px 9px 0px 0px; */
     max-width: 390px;
   }
 
@@ -910,9 +904,7 @@ section.team,
   }
 
   .service-blog {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .blogtext {
@@ -967,6 +959,10 @@ section.team,
   .Krushna53-header .Krushna53-Con-button {
     margin: 2rem 2rem 2rem 2rem;
   }
+
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width:768px) and (max-width:1024px) {
@@ -980,7 +976,6 @@ section.team,
   }
 
   .blank-img {
-
     max-width: 543px;
     display: flex;
     align-items: center;
@@ -1111,8 +1106,8 @@ section.team,
   }
 
   .image-folder {
-    padding: 0.6rem 0rem;
-    width: 160px;
+    padding: 0.6rem 0.5rem;
+    width: 100%;
   }
 
   .image-folder img {
@@ -1259,15 +1254,6 @@ section.team,
     display: none !important;
   }
 
-  /* .flex {
-    flex-direction: column;
-  }
-
-  .flex p {
-    width: 95%;
-    text-align: justify;
-  } */
-
   .some_work {
     display: block;
   }
@@ -1282,5 +1268,9 @@ section.team,
 
   .header.active {
     position: sticky;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
