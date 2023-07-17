@@ -58,7 +58,8 @@
         },
         {
             "id": "2",
-            "image": "/images/nav_logo2.png"
+            "image": "/images/logo6.png"
+           
         },
         {
             "id": "3",
@@ -66,7 +67,8 @@
         },
         {
             "id": "4",
-            "image": "/images/logo6.png"
+            "image": "/images/Logo_001.1957aa1c.png"
+        
         },
         {
             "id": "5",
@@ -74,7 +76,7 @@
         },
         {
             "id": "6",
-            "image": "/images/Logo_001.1957aa1c.png"
+            "image": "/images/nav_logo2.png"
         }
     ],
     "some_work": [

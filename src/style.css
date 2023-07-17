@@ -378,7 +378,7 @@ section.team,
 }
 
 .image-folder img {
-  width: 130px;
+  width: 100%;
   margin: auto;
   height: 130px;
   object-fit: contain;
@@ -737,10 +737,10 @@ section.team,
 
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* Three columns in the grid */
-  grid-gap: 10px;
-  /* Optional gap between the boxes */
+  grid-template-columns: repeat(3, 0fr);
+  grid-gap: 20px;
+  text-align: center;
+  justify-content: center;
 }
 
 .image-folder {
@@ -748,8 +748,12 @@ section.team,
   width: 335px;
   margin: 10px auto;
   text-align: center;
+  padding: 0.6em 1.2em;
+  box-shadow: -1px 4px 19px -5px #e0e5e4;
 }
-
+#Clients p{
+text-align: center;
+}
 @media only screen and (max-width: 1024px) {
   .blog-image img {
     display: flex;
