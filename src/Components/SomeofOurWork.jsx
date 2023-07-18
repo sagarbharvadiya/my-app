@@ -18,9 +18,9 @@ const SomeOfOurWork = () => {
                     </div>
                     <div className="page">
                       <h4>{d.title}</h4>
-                      <a href={d.link} target="_blank" rel="noreferrer">
+                      {/* <a href={d.link} target="_blank" rel="noreferrer">
                         Read Case Study
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </a>
