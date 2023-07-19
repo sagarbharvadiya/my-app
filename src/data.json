@@ -98,5 +98,26 @@
             "title": "Built  Website on Gatsby",
             "link": "/"
         }
-    ]
+    ],
+  "SomeOfOurWorkDetails":[
+    {
+        "id":"1",
+        "title":"NSE Clearing Digital Overhaul with Drupal 9",
+        "img": "/images/SAATA.webm",
+        "tag":"REACT",
+        "tag1":"Netlify",
+        "tag2":"Contentful",
+        "Client":"Client Overview",
+        "dis":"NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
+        "slider1":"/images/saata.jpg",
+        "slider2":"/images/saata.jpg",
+        "slider3":"/images/saata.jpg",
+        "subhedding":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
+        "Overview":"Project Overview",
+        "des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
+        "list1":"100% WCAG 2.0 compliant website",
+        "list2":"100% WCAG 2.0 compliant website"
+
+    }
+  ]
 }

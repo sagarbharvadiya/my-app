@@ -117,19 +117,20 @@ p {
 }
 
 .Krushna53-Con-button button {
-  background: #efa92a;
-  padding: 0.4rem;
-  border-radius: 0.2rem;
-  font-size: 1.2rem;
+  color: white;
+  padding: 10px 20px;
   border: none;
-  color: #384baf;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 6px;
-
+  cursor: pointer;
+  gap: 5px;
+  background: #ffb727;
 }
 
+.Krushna53-Con-button button a {
+  color: white;
+}
 
 /* banner css */
 .Krushna53-banner {
@@ -153,22 +154,20 @@ p {
   font-size: 1.5rem;
 }
 
-.Krushna53-Con-button a button {
-  background: #efa92a;
-  padding: 0.4rem;
-  border-radius: 0.2rem;
-  font-size: 1.2rem;
+.Krushna53-Con-button button {
+  color: white;
+  padding: 10px 20px;
   border: none;
-  color: #384baf;
-  -webkit-border-radius: 0.2rem;
-  -moz-border-radius: 0.2rem;
-  -ms-border-radius: 0.2rem;
-  -o-border-radius: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+  background: #ffb727;
 }
 
-.Krushna53-Con-button a button:hover {
-  cursor: pointer;
-  background: #efa92a;
+button:hover {
+  background-color: #499b1c;
 }
 
 .Krushna53-banner-img img {
@@ -400,8 +399,7 @@ section.team,
 
 .service-blog {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 0fr);
   align-items: center;
   justify-content: space-between;
 }
@@ -751,9 +749,143 @@ section.team,
   padding: 0.6em 1.2em;
   box-shadow: -1px 4px 19px -5px #e0e5e4;
 }
-#Clients p{
-text-align: center;
+
+#Clients p {
+  text-align: center;
 }
+
+/* some of work details css  */
+section.SomeOfOurWorkDetails {
+  margin-top: 65px;
+}
+
+section.SomeOfOurWorkDetails .left {
+  width: 620px;
+}
+
+.title h2,
+.left h4,
+.subhedding,
+.overview h4 {
+  font-family: space-grotesk-bold, sans-serif;
+}
+
+.title h2 {
+  margin-top: 10px;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tag,
+.left p,
+.overview p,
+ul {
+  font-family: "Helvetica-Now-Display", sans-serif;
+  text-align: justify;
+}
+
+.tag h5 {
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0.1px 0.1px 2px 0.1px rgb(100 98 128);
+  color: #646262;
+  text-align: center;
+  font-size: 17px;
+  padding: 0.2em;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  gap: 18px;
+  padding: 30px 0;
+}
+
+.banner_image img {
+  width: 100%;
+  height: auto;
+}
+
+.text_image,
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.left h4 {
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.left p {
+  color: #1f1f1f;
+  line-height: 1.6;
+}
+
+.right {
+  width: 550px;
+  height: 100%;
+}
+
+.right img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.subhedding {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f1f1f;
+  line-height: 1.5;
+}
+
+.description {
+  gap: 30px;
+}
+
+.overview {
+  max-width: 700px;
+}
+
+.overview h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.overview p {
+  margin: 10px 0;
+  color: #1f1f1f;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.overview li {
+  margin-top: 10px;
+  list-style: circle;
+  color: #1f1f1f;
+}
+
+.banner_image video{
+  width: 100%;
+  height: 400px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .service-blog {
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .blog-image img {
     display: flex;
@@ -893,7 +1025,7 @@ text-align: center;
     display: none;
   }
 
-  ul {
+  header ul {
     display: flex !important;
     align-items: center;
     flex-direction: column;
@@ -1276,5 +1408,50 @@ text-align: center;
 
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text_image,
+  .description {
+    flex-direction: column;
+  }
+
+  .title {
+    margin: 20px 0;
+  }
+
+  .right img,
+  .right {
+    width: 100%;
+    margin: auto;
+  }
+
+  .right {
+    max-width: 360px;
+  }
+
+  .text_image {
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .overview {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  section.SomeOfOurWorkDetails .left {
+    width: 100%;
+  }
+
+  section.SomeOfOurWorkDetails .slick-prev {
+    left: -23px !important;
+  }
+
+  section.SomeOfOurWorkDetails .slick-next {
+    right: -23px !important;
+  }
+
+  section.SomeOfOurWorkDetails {
+    margin: 0px;
   }
 }

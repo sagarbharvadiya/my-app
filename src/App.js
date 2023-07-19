@@ -1,28 +1,21 @@
 import React from 'react';
-import './style.css'
-import Banner from './Components/Banner';
-import AboutUs from './Components/About-us';
-import Services from './Components/Services';
-import Clients from './Components/Clients';
-import Footer from './Components/Footer';
-import Technologies from './Components/Technologies';
-import OurTeam from './Components/OurTeam';
-import Contact from './Components/Contact';
+import { Route, Routes } from 'react-router-dom';
 import NewHeader from './Components/NewHeadr';
-import SomeOfOurWork from './Components/SomeofOurWork';
-
+import Home from './Page/Home';
+import SomeOfOurWorkDetails from './Components/SomeOfOurWorkDetails';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
+import './style.css'
 
 function App() {
     return (
         <>
             <NewHeader />
-            <Banner />
-            <AboutUs />
-            <Services />
-            <Technologies />
-            <SomeOfOurWork />
-            <Clients />
-            <OurTeam />
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route exact path='/Home' element={<Home />} />
+                <Route exact path='/SomeOfOurWork/:productId' element={<SomeOfOurWorkDetails />} />
+            </Routes>
             <Contact />
             <Footer />
         </>

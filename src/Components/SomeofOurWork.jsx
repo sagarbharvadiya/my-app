@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../data.json";
+import { Link } from "react-router-dom";
 const SomeOfOurWork = () => {
   return (
     <>
@@ -18,9 +19,9 @@ const SomeOfOurWork = () => {
                     </div>
                     <div className="page">
                       <h4>{d.title}</h4>
-                      {/* <a href={d.link} target="_blank" rel="noreferrer">
+                      <Link data-item-id={d.id} to={`/SomeOfOurWork/${d.id}`}>
                         Read Case Study
-                      </a> */}
+                      </Link>
                     </div>
                   </div>
                 </a>

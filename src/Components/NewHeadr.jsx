@@ -41,7 +41,7 @@ function NewHeader() {
           <ul>
             <li>
               <a
-                href="#home"
+                href="/home"
                 className={activeMenu === "home" ? "active" : ""}
                 onClick={() => handleSetActiveMenu("home")}
               >
