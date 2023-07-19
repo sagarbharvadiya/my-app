@@ -19,8 +19,8 @@ const SomeOfOurWork = () => {
                     </div>
                     <div className="page">
                       <h4>{d.title}</h4>
-                      <Link data-item-id={d.id} to={`/SomeOfOurWork/${d.id}`}>
-                        Read Case Study
+                      <Link data-item-id={d.id} to={`/work/${d.id}`}>
+                        Read More
                       </Link>
                     </div>
                   </div>
