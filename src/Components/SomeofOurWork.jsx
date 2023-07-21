@@ -19,9 +19,9 @@ const SomeOfOurWork = () => {
                     </div>
                     <div className="page">
                       <h4>{d.title}</h4>
-                      <Link data-item-id={d.id} to={`/work/${d.id}`}>
+                      {/* <Link data-item-id={d.id} to={`/work/${d.id}`}>
                         Read More
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </a>

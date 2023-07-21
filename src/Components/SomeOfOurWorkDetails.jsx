@@ -35,7 +35,17 @@ const SomeOfOurWorkDetails = () => {
           </div>
           <div className="banner_image">
             {/* Display the video */}
-            <video src={thisProduct.img} autoPlay muted infinite  controls></video>
+
+            <video
+              autoPlay
+              muted
+              loop
+              id="video-background"
+              className="h-auto w-auto"
+            >
+              <source src={thisProduct.img} type="video/mp4" />
+              {/* Add additional source tags for other formats if needed  */}
+            </video>
           </div>
           <div className="text_image">
             <div className="left">
