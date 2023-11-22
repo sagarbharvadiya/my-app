@@ -84,6 +84,15 @@ function NewHeader() {
                 Our Team
               </a>
             </li>
+            <li>
+              <a
+                href="#careers"
+                className={activeMenu === "careers" ? "active" : ""}
+                onClick={() => handleSetActiveMenu("careers")}
+              >
+                Careers
+              </a>
+            </li>
           </ul>
           <div className="social show_mobile">
             <div className="Krushna53-Con-button">

@@ -6,6 +6,7 @@ import SomeOfOurWorkDetails from './Components/SomeOfOurWorkDetails';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import './style.css'
+import JobDetails from './Components/JobDetails';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <Route exact path='/' element={<Home />} />
                 <Route exact path='/Home' element={<Home />} />
                 <Route exact path='/work/:productId' element={<SomeOfOurWorkDetails />} />
+                <Route exact path='/jobs' element={<JobDetails />} />
             </Routes>
             <Contact />
             <Footer />
