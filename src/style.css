@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
   margin: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
 }
 
 a {
@@ -46,7 +46,7 @@ p {
 .header.active {
   position: fixed;
   background-color: #fff;
-  box-shadow: 0 5px 10px -10px rgba(0, 0, 0, .6);
+  box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
 }
 
 .header__logo a {
@@ -142,15 +142,14 @@ p {
   align-items: center;
 }
 
-
 .Krushna53-banner h1 {
-  padding-bottom: 2.0rem;
-  font-size: 4.0rem;
+  padding-bottom: 2rem;
+  font-size: 4rem;
   color: #000;
 }
 
 .Krushna53-banner p {
-  padding-bottom: 2.0rem;
+  padding-bottom: 2rem;
   font-size: 1.5rem;
 }
 
@@ -174,9 +173,7 @@ button:hover {
   max-width: 40rem;
   height: auto;
   /* border-radius: 100%; */
-
 }
-
 
 /* about css */
 .Krushna53-AboutUs-flex {
@@ -216,8 +213,6 @@ button:hover {
   color: blue;
   font-size: 24px;
 }
-
-
 
 .Technologies .d_flex {
   display: flex !important;
@@ -330,13 +325,13 @@ section.team,
   line-height: 2.1;
 }
 
-.php-email-form button[type=submit] {
+.php-email-form button[type="submit"] {
   background: #384baf;
   border: 0;
   border-radius: 5px;
   color: #fff;
   padding: 10px 24px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .contact_text {
@@ -347,7 +342,6 @@ section.team,
   padding: 0px;
   margin: 0;
 }
-
 
 .Krushna53-Clients h2 {
   font-size: 28px;
@@ -410,7 +404,6 @@ section.team,
   /* margin-bottom: 20px; */
   aspect-ratio: 2/2;
   object-fit: contain;
-
 }
 
 .service-blog p {
@@ -425,7 +418,7 @@ section.team,
   margin: 5px 10px;
 
   border-radius: 8px;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   overflow: hidden;
   width: 340px;
 }
@@ -477,7 +470,7 @@ section.team,
 }
 
 .footer-section {
-  background-color: #EEE8E8;
+  background-color: #eee8e8;
 }
 
 .logo {
@@ -509,7 +502,6 @@ section.team,
 .footer-icon {
   text-decoration: none;
   margin: auto;
-
 }
 
 .ri-facebook-circle-fill {
@@ -524,7 +516,6 @@ section.team,
   animation-delay: 3s;
 }
 
-
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -535,7 +526,7 @@ section.team,
   }
 
   100% {
-    transform: translateY(0)
+    transform: translateY(0);
   }
 }
 
@@ -563,13 +554,13 @@ section.team,
 }
 
 .Krushna53-Testimonials h1 {
-  padding-bottom: 2.0rem;
-  font-size: 2.0rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
   color: #000;
 }
 
 .Krushna53-Testimonials p {
-  padding-bottom: 2.0rem;
+  padding-bottom: 2rem;
   font-size: 1.5rem;
 }
 
@@ -694,7 +685,7 @@ section.team,
 .some_work img {
   width: 100%;
   height: auto;
-  transition: transform .5s ease-in-out 0s;
+  transition: transform 0.5s ease-in-out 0s;
 }
 
 .some_work .image img:hover {
@@ -711,7 +702,6 @@ section.team,
   color: #1f1f1f;
   font-family: space-grotesk-bold, sans-serif;
   margin: 15px auto;
-
 }
 
 .some_work a {
@@ -735,7 +725,7 @@ section.team,
 
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 0.1fr);
   grid-gap: 20px;
   text-align: center;
   justify-content: center;
@@ -879,6 +869,94 @@ ul {
   width: 100%;
   height: 400px;
 }
+/* CareersPage */
+.CareersPage .title h1 {
+  font-size: 2.3rem;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+}
+
+.image-text {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.right_img {
+  width: 580px;
+  margin: auto;
+}
+.left_text {
+  padding: 0px 10px;
+  margin-top: 70px;
+}
+.viewbtn button {
+  padding: 10px 20px;
+  background: #384baf;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+.viewbtn button:hover {
+  background: #ffb727;
+}
+.job_openings .title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.fild_card {
+  border: none;
+  box-sizing: border-box;
+  width: 40%;
+}
+.fild_card .d-flex {
+  gap: 3%;
+}
+.fild_card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  width: 66%;
+}
+.fild_card h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #646262;
+}
+.fild_card a.read-more {
+  padding: 9px 10px;
+  background: #384baf;
+  color: white;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+/* JobDetails */
+.JobDetails{
+  text-align: justify;
+
+}
+.JobDetails h1{
+  font-size: 2.3rem;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 70px;
+}
+.JobDetails .fild_item h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 20px 0px;
+}
+.JobDetails .fild_text h5 {
+  font-weight: 600;
+  margin: 5px;
+}
+.JobDetails .fild_text span{
+  color: #000;
+  font-weight: bold;
+}
 
 @media only screen and (min-width: 1400px) {
   .service-blog {
@@ -985,7 +1063,6 @@ ul {
   .Krushna53-Testimonials-paragraph {
     margin: auto;
     text-align: center;
-
   }
 
   .show-btn {
@@ -1005,7 +1082,6 @@ ul {
   ul li a {
     font-size: 1.9rem;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -1101,7 +1177,7 @@ ul {
   }
 }
 
-@media (min-width:768px) and (max-width:1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .Krushna53-AboutUs-flex .AboutUs-info {
     max-width: 100%;
     display: flex;
@@ -1120,7 +1196,6 @@ ul {
 
   .Krushna53-AboutUs-flex {
     display: block;
-
   }
 
   .AboutUs-info h2 {
@@ -1137,7 +1212,6 @@ ul {
     display: flex;
     align-items: center;
     margin-right: 18px;
-
   }
 
   .Krushna53-logo img {
@@ -1145,7 +1219,7 @@ ul {
   }
 
   .Krushna53-navbar ul li a {
-    font-size: 3rem
+    font-size: 3rem;
   }
 
   /* .Krushna53-navbar li {
@@ -1166,7 +1240,6 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-
   .nav-links {
     display: none;
   }
@@ -1203,7 +1276,6 @@ ul {
   }
 
   .Krushna53-banner {
-
     flex-direction: column;
   }
 
@@ -1249,7 +1321,6 @@ ul {
   .image-folder img {
     /* max-width: 100%; */
     width: 100%;
-
   }
 
   .blog-left {
@@ -1342,8 +1413,6 @@ ul {
   .blog-image {
     margin: 0;
   }
-
-
 
   .header {
     align-items: flex-start;
@@ -1454,5 +1523,17 @@ ul {
   section.SomeOfOurWorkDetails {
     margin: 0px;
   }
+  .CareersPage .image-text{
+    flex-direction: column;
+  }
+  .CareersPage .right_img,.right_img img{
+    width: 100%;
+  }
+  .job_openings .fild_card{
+    width: 100%;
+  }
+  .fild_card a.read-more{
+    width: 40%;
+    margin: 0px;
+  }
 }
-
