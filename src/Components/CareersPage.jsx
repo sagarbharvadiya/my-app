@@ -1,37 +1,20 @@
 import React from "react";
-import job from "../img/jobimg.png";
+import fild_img from "../img/jobimg.png";
 import { Link } from "react-router-dom";
 function CareersPage() {
   return (
     <>
       <section className="CareersPage" id="careers">
         <div className="commonWidth">
-          <div className="title">
-            <h1>Jobs</h1>
-          </div>
-
-          <div className="image-text">
-            <div className="right_img">
-              <img src={job} alt="job" />
-            </div>
-            <div className="left_text">
-              <p>
-                Innovating purposeful people-first experiences and products with
-                a bunch of designers, engineers, and coders inspired by a
-                problem-solving design approach, tech trends, and lots of
-                creativity.{" "}
-              </p>
-              <div className="viewbtn">
-                <a href="#possition" target="">
-                  <button id="scroll">View Open Positions </button>
-                </a>
-              </div>
-            </div>
-          </div>
+         
           <div className="job_openings" id="possition">
             <div className="title">
-              <h2>Search Jobs</h2>
+              <h2>Jobs</h2>
             </div>
+            <div className="job_fild">
+              <div className="fild_img">
+                <img src={fild_img} alt="job" />
+              </div>
             <div className="fild_card">
               <div className="d-flex">
                 <div className="job">
@@ -48,6 +31,7 @@ function CareersPage() {
               </Link>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </>

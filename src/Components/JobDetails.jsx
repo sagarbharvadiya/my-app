@@ -1,10 +1,14 @@
 import React from "react";
-
+import job from "../img/jobimg.png";
+import { Link } from "react-router-dom";
 function JobDetails() {
   return (
     <>
       <div className="JobDetails">
         <div className="commonWidth ">
+        
+
+          
           <div className="job_title">
             <h1>Associate Drupal Developer (Full Stack)</h1>
           </div>
