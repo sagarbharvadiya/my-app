@@ -1152,6 +1152,7 @@ ul {
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
   }
+ 
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1214,6 +1215,9 @@ ul {
     height: 52px !important;
     font-size: 35px !important;
   }
+  /* .job_fild {
+    flex-direction: column;
+  } */
 }
 
 @media screen and (max-width: 767px) {
@@ -1500,11 +1504,10 @@ ul {
   section.SomeOfOurWorkDetails {
     margin: 0px;
   }
-  .CareersPage .image-text {
+  .job_fild {
     flex-direction: column;
   }
-  .CareersPage .right_img,
-  .right_img img {
+  .fild_img img {
     width: 100%;
   }
   .job_openings .fild_card {
