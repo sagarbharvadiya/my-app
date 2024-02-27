@@ -6,7 +6,7 @@ import Clients from '../Components/Clients';
 import Technologies from '../Components/Technologies';
 import OurTeam from '../Components/OurTeam';
 import SomeOfOurWork from '../Components/SomeofOurWork';
-import CareersPage from '../Components/CareersPage';
+// import CareersPage from '../Components/CareersPage';
 // import JobDetails from '../Components/JobDetails';
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
             <SomeOfOurWork />
             <Clients />
             <OurTeam />
-            <CareersPage/>
+            {/* <CareersPage/> */}
             {/* <JobDetails/> */}
         </>
     )
