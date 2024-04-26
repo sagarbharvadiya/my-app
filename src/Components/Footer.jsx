@@ -20,7 +20,7 @@ function Footer(params) {
               <i class="ri-github-fill icon"></i>
             </a>
             <a
-              href="https://bit.ly/3WbQEoH/chat-krushna53"
+              href="https://bit.ly/3WbQEoH"
               target="_blank"
               rel="noreferrer"
               className="footer-icon"

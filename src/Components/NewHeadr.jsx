@@ -115,7 +115,7 @@ function NewHeader() {
           <button>
             <i className="fa fa-phone" aria-hidden="true"></i>
             <a
-              href="https://bit.ly/3WbQEoH/chat-krushna53"
+              href="https://bit.ly/3WbQEoH"
               target="_blank"
               rel="noreferrer"
             >
