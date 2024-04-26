@@ -20,7 +20,7 @@ function Footer(params) {
               <i class="ri-github-fill icon"></i>
             </a>
             <a
-              href="http://bit.ly/chat-krushna53"
+              href="https://bit.ly/3WbQEoH/chat-krushna53"
               target="_blank"
               rel="noreferrer"
               className="footer-icon"
@@ -28,7 +28,7 @@ function Footer(params) {
               <i className="ri-whatsapp-line icon"></i>
             </a>
             <a
-              href="mailto:harshal.pradhan@krushna53.com"
+              href="mailto:info@krushna53.com"
               className="footer-icon"
             >
               <i className="fas fa-envelope icon"></i>
