@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../img/logo.png";
+import { Link } from "react-router-dom";
 
 function NewHeader() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -41,7 +42,7 @@ function NewHeader() {
           <ul>
             <li>
               <a
-                href=""
+                href="/"
                 className={activeMenu === "home" ? "active" : ""}
                 onClick={() => handleSetActiveMenu("home")}
               >
@@ -84,15 +85,15 @@ function NewHeader() {
                 Our Team
               </a>
             </li>
-            {/* <li>
+            <li>
               <a
-                href="#careers"
-                className={activeMenu === "careers" ? "active" : ""}
-                onClick={() => handleSetActiveMenu("careers")}
+                href="/blogs"
+                className={activeMenu === "blogs" ? "active" : ""}
+                onClick={() => handleSetActiveMenu("blogs")}
               >
-                Careers
+              Blogs
               </a>
-            </li> */}
+            </li>
           </ul>
           <div className="social show_mobile">
             <div className="Krushna53-Con-button">
