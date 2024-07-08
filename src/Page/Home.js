@@ -8,6 +8,7 @@ import OurTeam from '../Components/OurTeam';
 import SomeOfOurWork from '../Components/SomeofOurWork';
 // import CareersPage from '../Components/CareersPage';
 // import JobDetails from '../Components/JobDetails';
+// import BlogPost from '../Components/BlogPost'
 
 const Home = () => {
     return (
@@ -22,6 +23,8 @@ const Home = () => {
             <OurTeam />
             {/* <CareersPage/> */}
             {/* <JobDetails/> */}
+            {/* <BlogPost/> */}
+        
         </>
     )
 }

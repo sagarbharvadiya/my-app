@@ -7,6 +7,8 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import './style.css'
 import JobDetails from './Components/JobDetails';
+import Blogs from './Components/Blogs'
+import BlogPost from './Components/BlogPost'
 
 function App() {
     return (
@@ -17,6 +19,8 @@ function App() {
                 <Route exact path='/Home' element={<Home />} />
                 <Route exact path='/work/:productId' element={<SomeOfOurWorkDetails />} />
                 <Route exact path='/jobs' element={<JobDetails />} />
+                <Route exact path='/Blogs' element={<Blogs />} />
+                <Route exact path='/blogs/why-drupal' element={<BlogPost />} />
             </Routes>
             <Contact />
             <Footer />
