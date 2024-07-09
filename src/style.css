@@ -953,6 +953,7 @@ ul {
   display: inline-block;
     font-weight: 700;
     color: #000;
+    padding-right: 10px;
 }
 .content .rich-text .box{
   padding: 5px 0px;
@@ -1016,6 +1017,7 @@ text-align: unset;
 .blog-post{
   padding-top: 6rem;
 }
+
 
 @media only screen and (min-width: 1400px) {
   .service-blog {

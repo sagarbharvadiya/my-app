@@ -33,7 +33,7 @@ const BlogPost = () => {
                 of your website to meet your specific business needs.</p>
               </div>
               <div className="box">
-               <p> <span>Integration Capabilities: </span>Drupal seamlessly
+               <p> <span>Integration Capabilities:</span>Drupal seamlessly
                 integrates with various third-party applications and services,
                 such as CRM systems, marketing automation tools, and e-commerce
                 platforms, ensuring a cohesive digital ecosystem.</p>
@@ -60,7 +60,7 @@ const BlogPost = () => {
                 data is protected.</p>
               </div>
               <div className="box">
-               <p> <span>Regular Updates: </span>Frequent security updates and
+               <p> <span>Regular Updates:</span>Frequent security updates and
                 patches are released by the Drupal community, keeping your site
                 protected against emerging threats and ensuring compliance with
                 industry standards.</p>
@@ -87,7 +87,7 @@ const BlogPost = () => {
                 and scheduling streamline the content management process.</p>
               </div>
               <div className="box">
-                <p><span>SEO and Performance Optimization: </span>Drupal is built
+                <p><span>SEO and Performance Optimization:</span>Drupal is built
                 with SEO best practices in mind, offering tools and modules to
                 optimize your website for search engines. Additionally, its
                 performance optimization features ensure fast loading times,

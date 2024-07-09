@@ -1,5 +1,5 @@
 import React from "react";
-import harshal from "../img/harshal.jpg";
+// import harshal from "../img/harshal.jpg";
 import sagar from "../img/WhatsApp Image 2023-07-12 at 12.25.14 PM.jpeg";
 import vinod from "../img/vinod.png";
 const OurTeam = () => {
@@ -36,7 +36,7 @@ return (
                     <div className="caption">
                         <h4>Vinod Keshariya</h4>
                         <p>Frontend UI Developer</p>
-                        <a href="https://bit.ly/vinod-keshariya-krushna53" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/ahir-vinod-keshariya-a747562b2/" target="_blank" rel="noreferrer">
                             <i className="ri-linkedin-box-fill icon"></i>
                         </a>
                     </div>
