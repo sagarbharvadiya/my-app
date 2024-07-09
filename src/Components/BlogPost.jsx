@@ -5,7 +5,7 @@ import blogimg from "../img/Why Choose Drupal.png";
 const BlogPost = () => {
   const pageTitle = "Top 3 Reasons Why Drupal Should Be Considered for Your Business";
   const pageDescription = "Discover the top reasons why Drupal is an excellent choice for your business website, including flexibility, security, and content management excellence.";
-  const pageUrl = "/blogs/why-drupal"; // Change this to your actual URL
+  const pageUrl = "https://krushna53.com/blogs/why-drupal"; // Change this to your actual URL
   const pageImage = blogimg;
 
   return (
@@ -15,14 +15,13 @@ const BlogPost = () => {
         <meta name="description" content={pageDescription} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:image" content={pageImage} />
+        <meta property="og:image" content={blogimg} />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={pageImage} />
-        <meta name="image" property="og:image" content="[../img/Why Choose Drupal.png]"></meta>
       </Helmet>
       <div className="blog-post">
         <div className="container">
