@@ -15,13 +15,13 @@ const BlogPost = () => {
         <meta name="description" content={pageDescription} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:image" content={blogimg} />
+        <meta property="og:image" content="https://krushna53.com/static/media/Why%20Choose%20Drupal.e2c2f3e0c9d933e06cfb.png"/>
         <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content={pageImage} />
+        <meta name="twitter:image" content="https://krushna53.com/static/media/Why%20Choose%20Drupal.e2c2f3e0c9d933e06cfb.png" />
       </Helmet>
       <div className="blog-post">
         <div className="container">

@@ -1631,4 +1631,13 @@ text-align: unset;
     height: auto;
 
   }
+  .blog-post{
+    padding-top: 0rem;
+  }
+  .content .box:hover {
+    transform: scale(0.9);
+}
+.blog-page .blog-title{
+  padding-top: 0px;
+}
 }
