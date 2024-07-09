@@ -16,7 +16,7 @@ function Banner() {
                             </div>
                         </div>
                         <div className=" Krushna53-banner-img">
-                            <img src={blank} alt="blank" />
+                            <img src={blank} alt="blank" loading="lazy"/>
                         </div>
                     </div>
                 </div>

@@ -42,6 +42,7 @@ const SomeOfOurWorkDetails = () => {
               loop
               id="video-background"
               className="h-auto w-auto"
+            
             >
               <source src={thisProduct.img} type="video/mp4" />
               {/* Add additional source tags for other formats if needed  */}

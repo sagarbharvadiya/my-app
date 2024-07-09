@@ -3,8 +3,10 @@ import { Helmet } from "react-helmet";
 import blogimg from "../img/Why Choose Drupal.png";
 
 const BlogPost = () => {
-  const pageTitle = "Top 3 Reasons Why Drupal Should Be Considered for Your Business";
-  const pageDescription = "Discover the top reasons why Drupal is an excellent choice for your business website, including flexibility, security, and content management excellence.";
+  const pageTitle =
+    "Top 3 Reasons Why Drupal Should Be Considered for Your Business";
+  const pageDescription =
+    "Discover the top reasons why Drupal is an excellent choice for your business website, including flexibility, security, and content management excellence.";
   const pageUrl = "https://krushna53.com/blogs/why-drupal"; // Change this to your actual URL
   const pageImage = blogimg;
 
@@ -28,7 +30,7 @@ const BlogPost = () => {
           <div className="blog-title">
             <h1>{pageTitle}</h1>
             <div className="title-img">
-              <img src={pageImage} alt="Why Choose Drupal" />
+              <img src={pageImage} alt="Why Choose Drupal" loading="lazy" />
             </div>
           </div>
           <div className="content">
@@ -115,8 +117,8 @@ const BlogPost = () => {
                 </div>
                 <div className="box">
                   <p>
-                    <span>Content Workflow:</span>Drupal provides robust
-                    content creation and publishing workflows, enabling teams to
+                    <span>Content Workflow:</span>Drupal provides robust content
+                    creation and publishing workflows, enabling teams to
                     collaborate efficiently. Features like version control,
                     content moderation, and scheduling streamline the content
                     management process.

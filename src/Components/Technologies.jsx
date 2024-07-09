@@ -86,6 +86,7 @@ const Technologies = () => {
                     alt={`Technology ${i}`}
                     width="100%"
                     height="100%"
+                    lazy="true"
                   />
                 </svg>
               </div>

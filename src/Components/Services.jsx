@@ -48,8 +48,8 @@ const servicesData = [
 
 function Services() {
   return (
-    <div className="commonWidth ">
-      <div className="service-section" id="service">
+    <div className="commonWidth" id="services">
+      <div className="service-section">
         <div className="servicewrapper">
           <div className="service-text commonTitleFontSize">Services</div>
           <div className="service-blog">

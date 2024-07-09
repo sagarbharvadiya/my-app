@@ -1,5 +1,6 @@
 import React from "react";
 import Blogimg from "../img/blog.jpg";
+import {Link} from 'react-router-dom'
 // import BlogPost from '../Components/BlogPost'
 // import { Link } from 'react-router-dom';
 // import img2 from '../img/Unknown.png'
@@ -12,7 +13,7 @@ function Blogs() {
           <div className="blog-title">
             <h1>Our Blogs</h1>
             <div className="title-img">
-              <img src={Blogimg} alt="job" />
+              <img src={Blogimg} alt="job" loading="lazy" />
             </div>
           </div>
 
@@ -33,18 +34,18 @@ function Blogs() {
                 and succeed in the digital world.
               </p>
               <div className="Krushna53-Con-button btn-box">
-                <a
-                  href="/blogs/why-drupal"
+                <Link
+                  to="/blogs/why-drupal"
                   target="_blank"
                   rel="noreferrer"
                   className="btn-1"
                 >
                   <button> Read more</button>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="blog-right">
-              {/* <img src={img2} alt="..." /> */}
+              {/* <img src={img2} alt="..." loading="lazy" /> */}
             </div>
           </div>
         </div>

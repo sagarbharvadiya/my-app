@@ -17,7 +17,7 @@ function Footer(params) {
               rel="noreferrer"
               className="footer-icon"
             >
-              <i class="ri-github-fill icon"></i>
+              <i className="ri-github-fill icon"></i>
             </a>
             <a
               href="https://bit.ly/3WbQEoH"

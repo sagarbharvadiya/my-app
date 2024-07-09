@@ -15,7 +15,7 @@ const SomeOfOurWork = () => {
                 <a href={d.link} className="work_main">
                   <div className="work">
                     <div className="image">
-                      <img src={d.img} alt="mockup-saata" />
+                      <img src={d.img} alt="mockup-saata" loading="lazy"/>
                     </div>
                     <div className="page">
                       <h4>{d.title}</h4>
