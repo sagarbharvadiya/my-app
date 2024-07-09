@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 import logo from "../img/logo.png";
 import { Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import data from "../data.json";
 
 function NewHeader() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
-  const [activeMenu, setActiveMenu] = useState(""); // State for active menu item
-
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
-
   const changeBackground = () => {
     if (window.scrollY >= 40) {
       setNavbar(true);
@@ -18,11 +17,36 @@ function NewHeader() {
       setNavbar(false);
     }
   };
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const handleSetActiveMenu = (menu) => {
-    setActiveMenu(menu);
+  const handleMenuItemClick = (link) => {
+    if (link.startsWith("#")) {
+      const currentUrl = location.pathname;
+      if (currentUrl.startsWith("/blogs/")) {
+        navigate("/", { replace: true });
+        setTimeout(() => {
+          navigate(`/#${link.replace("#", "")}`, { replace: true });
+        }, 100);
+      } else if (currentUrl === "/blogs" || currentUrl === "/blogs/") {
+        setTimeout(() => {
+          navigate(`/#${link.replace("#", "")}`, { replace: true });
+        }, 100);
+      } else {
+        navigate(`/#${link.replace("#", "")}`);
+      }
+      scrollToElement(link.replace("#", ""));
+    } else {
+      navigate(`/${link}`);
+    }
   };
 
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView();
+    }
+  };
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
     return () => {
@@ -33,79 +57,37 @@ function NewHeader() {
   return (
     <header className={navbar ? "header active" : "header"}>
       <div className="header__logo">
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
       </div>
       <div className="nav_new">
         <nav className={`header__nav ${isNavOpen ? "open" : ""}`}>
           <ul>
-            <li>
-              <a
-                href="/"
-                className={activeMenu === "home" ? "active" : ""}
-                onClick={() => handleSetActiveMenu("home")}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#About"
-                className={activeMenu === "about" ? "active" : ""}
-                onClick={() => handleSetActiveMenu("about")}
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#service"
-                className={activeMenu === "services" ? "active" : ""}
-                onClick={() => handleSetActiveMenu("services")}
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#Clients"
-                className={activeMenu === "clients" ? "active" : ""}
-                onClick={() => handleSetActiveMenu("clients")}
-              >
-                Our Clients
-              </a>
-            </li>
-            <li>
-              <a
-                href="#team"
-                className={activeMenu === "team" ? "active" : ""}
-                onClick={() => handleSetActiveMenu("team")}
-              >
-                Our Team
-              </a>
-            </li>
-            <li>
-              <a
-                href="/blogs"
-                className={activeMenu === "blogs" ? "active" : ""}
-                onClick={() => handleSetActiveMenu("blogs")}
-              >
-              Blogs
-              </a>
-            </li>
+            {data.Navbar.map((item, i) => (
+              <React.Fragment key={i}>
+                <li>
+                  <Link
+                    to={item.link}
+                    onClick={() => handleMenuItemClick(item.link)}
+                  >
+                    {item.menu}
+                  </Link>
+                </li>
+              </React.Fragment>
+            ))}
           </ul>
           <div className="social show_mobile">
             <div className="Krushna53-Con-button">
               <button>
                 <i className="fa fa-phone" aria-hidden="true"></i>
-                <a
-                  href="http://bit.ly/chat-krushna53"
+                <Link
+                  href="(link unavailable)"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Contact Now
-                </a>
+                </Link>
               </button>
             </div>
           </div>
@@ -115,11 +97,7 @@ function NewHeader() {
         <div className="Krushna53-Con-button">
           <button>
             <i className="fa fa-phone" aria-hidden="true"></i>
-            <a
-              href="https://bit.ly/3WbQEoH"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="(link unavailable)" target="_blank" rel="noreferrer">
               Contact Now
             </a>
           </button>

@@ -3,11 +3,11 @@ import blank from "../img/13038.png";
 function AboutUs() {
     return (
         <>
-            <div className="commonWidth ">   
-                    <div className="Krushna53-AboutUs" id="About">
+            <div className="commonWidth" id="about">   
+                    <div className="Krushna53-AboutUs">
                         <div className=" Krushna53-AboutUs-flex">
                             <div className="aboutus-image">
-                                <img src={blank} alt="blank" className="blank-img" />
+                                <img src={blank} alt="blank" className="blank-img" loading="lazy"/>
                             </div>
                             <div className="AboutUs-info">
                                 <h2 className="commonTitleFontSize">About Us</h2>

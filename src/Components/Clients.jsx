@@ -40,14 +40,14 @@ function Clients() {
   // };
 
   return (
-    <div className="commonWidth">
-      <div className="Krushna53-Clients" id="Clients">
+    <div className="commonWidth" id="clients">
+      <div className="Krushna53-Clients">
         <h2 className="commonTitleFontSize">Our clients</h2>
         <p>Discover the brands we've partnered with for exceptional results.</p>
         <div className="gallery-container">
           {dataJson.Clients.map((d, i) => (
             <div className="image-folder" key={i}>
-              <img src={d.image} alt={d.image} />
+              <img src={d.image} alt={d.image}  loading="lazy"/>
             </div>
           ))}
         </div>

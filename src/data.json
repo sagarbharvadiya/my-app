@@ -1,4 +1,36 @@
 {
+    "Navbar": [
+        {
+            "id": "1",
+            "menu": "Home",
+            "link": ""
+        },
+        {
+            "id": "2",
+            "menu": "About",
+            "link": "#about"
+        },
+        {
+            "id":"3",
+            "menu":"Services",
+            "link":"#services"
+        },
+        {
+            "id":"4",
+            "menu":"Our Clients",
+            "link":"#clients"
+        },
+        {
+            "id":"5",
+            "menu":"Our Team",
+            "link":"#team"
+        },
+        {
+            "id":"5",
+            "menu":"Blogs",
+            "link":"blogs"
+        }
+    ],
     "Technologies": [
         {
             "id": "1",
@@ -59,7 +91,6 @@
         {
             "id": "2",
             "image": "/images/logo6.png"
-           
         },
         {
             "id": "3",
@@ -68,7 +99,6 @@
         {
             "id": "4",
             "image": "/images/Logo_001.1957aa1c.png"
-        
         },
         {
             "id": "5",
@@ -106,63 +136,61 @@
             "title": "Built a Single Page Website on ReactJs",
             "link": "/"
         }
-       
     ],
-  "SomeOfOurWorkDetails":[
-    {
-        "id":"1",
-        "title":"Converted a Wordpress website to Contentful/ReactJs Website",
-        "img": "/images/SAATA.webm",
-        "tag":"REACT",
-        "tag1":"Netlify",
-        "tag2":"Contentful",
-        "Client":"Client Overview",
-        "dis":"NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
-        "slider1":"/images/saata.jpg",
-        "slider2":"/images/saata-tab.jpg",
-        "slider3":"/images/saata-mobile.jpg",
-        "subhedding":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
-        "Overview":"Project Overview",
-        "des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
-        "list1":"100% WCAG 2.0 compliant website",
-        "list2":"100% WCAG 2.0 compliant website"
-
-    },
-    {
-        "id":"2",
-        "title":"Built  Website on Gatsby",
-        "img": "/images/Home _ Epta Layers.mp4",
-        "tag":"Gatsby",
-        "tag1":"Netlify",
-        "tag2":"Css",
-        "Client":"Client Overview",
-        "dis":"NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
-        "slider1":"/images/epta.jpg",
-        "slider2":"/images/epta-tab.jpg",
-        "slider3":"/images/epta-mobile.jpg",
-        "subhedding":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
-        "Overview":"Project Overview",
-        "des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
-        "list1":"100% WCAG 2.0 compliant website",
-        "list2":"100% WCAG 2.0 compliant website"
-    },
-    {
-        "id":"3",
-        "title":"Built a Single Page Website on ReactJs",
-        "img": "/images/One-Plus.mp4",
-        "tag":"REACT",
-        "tag1":"CSS",
-        "tag2":"Netlify",
-        "Client":"Client Overview",
-        "dis":"NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
-        "slider1":"/images/oneplus.jpg",
-        "slider2":"/images/oneplus-tab.jpg",
-        "slider3":"/images/oneplus-mobile.jpg",
-        "subhedding":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
-        "Overview":"Project Overview",
-        "des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
-        "list1":"100% WCAG 2.0 compliant website",
-        "list2":"100% WCAG 2.0 compliant website"
-    }
-  ]
+    "SomeOfOurWorkDetails": [
+        {
+            "id": "1",
+            "title": "Converted a Wordpress website to Contentful/ReactJs Website",
+            "img": "/images/SAATA.webm",
+            "tag": "REACT",
+            "tag1": "Netlify",
+            "tag2": "Contentful",
+            "Client": "Client Overview",
+            "dis": "NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
+            "slider1": "/images/saata.jpg",
+            "slider2": "/images/saata-tab.jpg",
+            "slider3": "/images/saata-mobile.jpg",
+            "subhedding": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
+            "Overview": "Project Overview",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
+            "list1": "100% WCAG 2.0 compliant website",
+            "list2": "100% WCAG 2.0 compliant website"
+        },
+        {
+            "id": "2",
+            "title": "Built  Website on Gatsby",
+            "img": "/images/Home _ Epta Layers.mp4",
+            "tag": "Gatsby",
+            "tag1": "Netlify",
+            "tag2": "Css",
+            "Client": "Client Overview",
+            "dis": "NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
+            "slider1": "/images/epta.jpg",
+            "slider2": "/images/epta-tab.jpg",
+            "slider3": "/images/epta-mobile.jpg",
+            "subhedding": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
+            "Overview": "Project Overview",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
+            "list1": "100% WCAG 2.0 compliant website",
+            "list2": "100% WCAG 2.0 compliant website"
+        },
+        {
+            "id": "3",
+            "title": "Built a Single Page Website on ReactJs",
+            "img": "/images/One-Plus.mp4",
+            "tag": "REACT",
+            "tag1": "CSS",
+            "tag2": "Netlify",
+            "Client": "Client Overview",
+            "dis": "NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
+            "slider1": "/images/oneplus.jpg",
+            "slider2": "/images/oneplus-tab.jpg",
+            "slider3": "/images/oneplus-mobile.jpg",
+            "subhedding": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
+            "Overview": "Project Overview",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
+            "list1": "100% WCAG 2.0 compliant website",
+            "list2": "100% WCAG 2.0 compliant website"
+        }
+    ]
 }

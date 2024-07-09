@@ -22,7 +22,7 @@ return (
                     </div>
                 </div>  */}
                 <div className="image2">
-                    <img src={sagar} alt="Sagar" />
+                    <img src={sagar} alt="Sagar" loading="lazy"/>
                     <div className="caption">
                         <h4>Sagar Bharvadiya</h4>
                         <p>Frontend UI Developer (Reactjs)</p>
@@ -32,7 +32,7 @@ return (
                     </div>
                 </div>
                 <div className="image3">
-                    <img src={vinod} alt="vinod" />
+                    <img src={vinod} alt="vinod" loading="lazy"/>
                     <div className="caption">
                         <h4>Vinod Keshariya</h4>
                         <p>Frontend UI Developer</p>
