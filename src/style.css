@@ -953,7 +953,7 @@ ul {
   display: inline-block;
     font-weight: 700;
     color: #000;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 .content .rich-text .box{
   padding: 5px 0px;
@@ -1017,6 +1017,15 @@ text-align: unset;
 .blog-post{
   padding-top: 6rem;
 }
+.content button:hover {
+  background: #ffb727;
+  color: #384baf;
+  font-weight: 700;
+}
+.content button{
+  letter-spacing: 1px;
+}
+
 
 
 @media only screen and (min-width: 1400px) {
