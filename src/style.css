@@ -1022,6 +1022,9 @@ text-align: unset;
   color: #384baf;
   font-weight: 700;
 }
+.content button{
+  letter-spacing: 1px;
+}
 
 
 

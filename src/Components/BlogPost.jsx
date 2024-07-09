@@ -22,6 +22,7 @@ const BlogPost = () => {
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={pageImage} />
+        <meta name="image" property="og:image" content="[../img/Why Choose Drupal.png]"></meta>
       </Helmet>
       <div className="blog-post">
         <div className="container">
