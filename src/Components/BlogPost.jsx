@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import blogimg from "../img/Why Choose Drupal.png";
+import blogimg from "../img/WhyChooseDrupal.png";
 
 const BlogPost = () => {
   const pageTitle =

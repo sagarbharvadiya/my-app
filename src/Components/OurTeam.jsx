@@ -1,6 +1,6 @@
 import React from "react";
 // import harshal from "../img/harshal.jpg";
-import sagar from "../img/WhatsApp Image 2023-07-12 at 12.25.14 PM.jpeg";
+import sagar from "../img/sagar.jpeg";
 import vinod from "../img/vinod.png";
 const OurTeam = () => {
 return (
