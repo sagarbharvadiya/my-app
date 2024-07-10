@@ -82,7 +82,7 @@ function NewHeader() {
               <button>
                 <i className="fa fa-phone" aria-hidden="true"></i>
                 <Link
-                  href="(link unavailable)"
+                  href="https://bit.ly/3WbQEoH"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -97,7 +97,7 @@ function NewHeader() {
         <div className="Krushna53-Con-button">
           <button>
             <i className="fa fa-phone" aria-hidden="true"></i>
-            <a href="(link unavailable)" target="_blank" rel="noreferrer">
+            <a href="https://bit.ly/3WbQEoH" target="_blank" rel="noreferrer">
               Contact Now
             </a>
           </button>
