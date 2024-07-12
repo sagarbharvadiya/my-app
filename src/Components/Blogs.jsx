@@ -1,5 +1,5 @@
 import React from "react";
-import BlogImg from "../img/BlogBanner.png";
+import BlogImg from "../img/BlogBanner1.png";
 import { Link } from "react-router-dom";
 import data from "../data.json";
 // import drupalImg from "../img/person-front-computer-working-html.jpg";

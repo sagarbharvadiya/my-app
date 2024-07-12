@@ -206,7 +206,7 @@
             "id": "2",
             "title": "Understanding React Hooks: Simplifying State Management in Functional Components",
             "description": "React Hooks, introduced in React version 16.8, marked a significant shift in how developers build components and manage state in React applications. Prior to Hooks, stateful logic and lifecycle features were exclusive to class components. However, Hooks brought these capabilities to functional components, offering a more straightforward and functional approach to state management.",
-            "img":"../images/5243562.jpg",
+            "img":"../images/reactimg1.jpg",
             "date": "11,July,2024",
             "link": "/blogs/react-hooks"
         }

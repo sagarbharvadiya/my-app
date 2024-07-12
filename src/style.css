@@ -594,31 +594,6 @@ section.team,
   margin-bottom: 5px;
 }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.error {
-  color: red;
-  margin-bottom: 10px;
-}
-
-.success {
-  color: green;
-  margin-bottom: 10px;
-}
-
-.contact-form-container button[type="submit"] {
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  background: #384baf;
-}
 
 .contact-form-container button[type="submit"]:hover {
   background: #ffb727;
