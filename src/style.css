@@ -313,14 +313,6 @@ section.team,
   right: -22px !important;
 }
 
-.contact .d_flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-  gap: 10px;
-}
-
 .form-control {
   padding: 0.475rem 1.25rem;
   font-size: 1rem;
@@ -572,16 +564,6 @@ section.team,
 .Krushna53-Con-button.hide-mobile {
   display: none;
 }
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
 
 .contact-form-container button[type="submit"]:hover {
   background: #ffb727;

@@ -49,8 +49,8 @@ const ContactForm = () => {
     <div className="tw-w-full tw-py-2.5 tw-px-5 tw-rounded tw-bg-gray-100">
       <div className="tw-text-4xl tw-text-black tw-font-bold tw-py-4 tw-text-center tw-leading-normal">Contact Us</div>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
+        <div className="tw-mb-[15px]">
+          <label htmlFor="name" className="tw-mb-1.5">Name:</label>
           <input className="tw-border tw-border-solid tw-border-gray-300 tw-rounded tw-p-2.5 tw-w-full "
             type="text"
             id="name"
@@ -58,8 +58,8 @@ const ContactForm = () => {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
+        <div className="tw-mb-[15px]">
+          <label htmlFor="email" className="tw-mb-1.5">Email:</label>
           <input className="tw-border tw-border-solid tw-border-gray-300 tw-rounded tw-p-2.5 tw-w-full"
             type="email"
             id="email"
@@ -67,8 +67,8 @@ const ContactForm = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="message">Message:</label>
+        <div className="tw-mb-[15px]">
+          <label htmlFor="message" className="tw-mb-1.5" >Message:</label>
           <textarea className="tw-border tw-border-solid tw-border-gray-300 tw-rounded tw-p-2.5 tw-w-full"
             id="message"
             value={message}

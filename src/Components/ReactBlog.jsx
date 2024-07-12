@@ -34,7 +34,7 @@ const ReactBlog = () => {
                 </h3>
                 <p className="tw-text-lg tw-mb-5">{section.text}</p>
                 {section.list && (
-                  <ul className="tw-list-none tw-m-0 tw-p-0">
+                  <ul className=" tw-pl-4 md:tw-p-0 tw-list-none tw-m-0">
                     {section.list.map((item, index) => (
                       <li
                         key={index}
