@@ -11,24 +11,24 @@
             "link": "#about"
         },
         {
-            "id":"3",
-            "menu":"Services",
-            "link":"#services"
+            "id": "3",
+            "menu": "Services",
+            "link": "#services"
         },
         {
-            "id":"4",
-            "menu":"Our Clients",
-            "link":"#clients"
+            "id": "4",
+            "menu": "Our Clients",
+            "link": "#clients"
         },
         {
-            "id":"5",
-            "menu":"Our Team",
-            "link":"#team"
+            "id": "5",
+            "menu": "Our Team",
+            "link": "#team"
         },
         {
-            "id":"5",
-            "menu":"Blogs",
-            "link":"blogs"
+            "id": "5",
+            "menu": "Blogs",
+            "link": "blog"
         }
     ],
     "Technologies": [
@@ -192,5 +192,79 @@
             "list1": "100% WCAG 2.0 compliant website",
             "list2": "100% WCAG 2.0 compliant website"
         }
-    ]
+    ],
+    "BlogPage": [
+        {
+            "id": "1",
+            "title": "Top 3 Reasons Why Drupal Should Be Considered for Your Business",
+            "description": "Explore the top three benefits of choosing Drupal for your business website: unmatched flexibility and customizability, robust security measures, and exceptional content management capabilities. Discover how Drupal can help your business grow and succeed in the digital world.",
+            "img":"../images/person-front-computer-working-html.jpg",
+            "date": "8,July,2024",
+            "link": "/blogs/why-drupal"
+        },
+        {
+            "id": "2",
+            "title": "Understanding React Hooks: Simplifying State Management in Functional Components",
+            "description": "React Hooks, introduced in React version 16.8, marked a significant shift in how developers build components and manage state in React applications. Prior to Hooks, stateful logic and lifecycle features were exclusive to class components. However, Hooks brought these capabilities to functional components, offering a more straightforward and functional approach to state management.",
+            "img":"../images/5243562.jpg",
+            "date": "11,July,2024",
+            "link": "/blogs/react-hooks"
+        }
+    ],
+    "topics": [
+        {
+            "name": "Drupal",
+            "url": "/blogs/why-drupal"
+        },
+        {
+            "name": "React",
+            "url": "/blogs/react-hooks"
+        }
+    ],
+    "DrupalBlog": [
+    {
+      "id": "1",
+      "title": "1. Flexibility and Customizability",
+      "tag": "Scalability:",
+      "tag1": "Custom Modules and Themes:",
+      "tag2": "Integration Capabilities:",
+      "richtext": "Drupal can handle everything from small websites to large-scale, high-traffic platforms. It's designed to grow with your business, making it an ideal choice for companies that anticipate expansion.",
+      "richtext1": "With a vast repository of modules and themes, Drupal allows for extensive customization. You can tailor the functionality and appearance of your website to meet your specific business needs.",
+      "richtext2": "Drupal seamlessly integrates with various third-party applications and services, such as CRM systems, marketing automation tools, and e-commerce platforms, ensuring a cohesive digital ecosystem."
+    },
+    {
+      "id": "2",
+      "title": "2. Robust Security",
+      "tag": "Active Security Team:",
+      "tag1": "Granular Access Control:",
+      "tag2": "Regular Updates:",
+      "richtext": "Drupal has a dedicated security team that actively monitors and addresses vulnerabilities, ensuring that your website remains secure against potential threats.",
+      "richtext1": "Drupal offers fine-grained permissions and user roles, allowing businesses to control access to different parts of the website and ensuring sensitive data is protected.",
+      "richtext2": "Frequent security updates and patches are released by the Drupal community, keeping your site protected against emerging threats and ensuring compliance with industry standards."
+    },
+    {
+      "id": "3",
+      "title": "3. Content Management Excellence",
+      "tag": "Multilingual Support:",
+      "tag1": "Content Workflow:",
+      "tag2": "SEO and Performance Optimization:",
+      "richtext": "Drupal is designed with multilingual capabilities, making it easy to create and manage content in multiple languages. This is particularly beneficial for businesses operating in diverse markets.",
+      "richtext1": "Drupal provides robust content creation and publishing workflows, enabling teams to collaborate efficiently. Features like version control, content moderation, and scheduling streamline the content management process.",
+      "richtext2": "Drupal is built with SEO best practices in mind, offering tools and modules to optimize your website for search engines. Additionally, its performance optimization features ensure fast loading times, enhancing the user experience and improving search engine rankings."
+    }
+  ],
+   "BlogSummary":[
+    {
+     "id":"1",
+     "title":"",
+     "richtext":"By leveraging Drupal's powerful features, businesses can create highly customized, secure, and scalable websites that cater to their unique needs, ultimately driving growth and success in the digital landscape."
+
+    },
+    {
+        "id":"1",
+        "title":"Unlock the Full Potential of Your Business with Drupal",
+        "richtext":" In summary, Drupal offers unparalleled flexibility and customizability, robust security features, and excellent content management capabilities, making it an ideal choice for businesses looking to create a powerful online presence. With its scalability and integration options, Drupal can grow alongside your business and adapt to your evolving needs. Ready to transform your digital experience?"
+     }
+    
+  ]
 }
