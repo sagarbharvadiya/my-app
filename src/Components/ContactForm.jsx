@@ -47,11 +47,11 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form-container">
-      <div className="contact_text commonTitleFontSize">Contact Us</div>
+      <div className="tw-text-4xl tw-text-black tw-font-bold tw-py-4 tw-text-center tw-leading-normal">Contact Us</div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
-          <input
+          <input className="tw-border tw-border-solid tw-border-gray-300 tw-rounded tw-p-2.5 tw-w-full "
             type="text"
             id="name"
             value={name}
@@ -60,7 +60,7 @@ const ContactForm = () => {
         </div>
         <div className="form-group">
           <label htmlFor="email">Email:</label>
-          <input
+          <input className="tw-border tw-border-solid tw-border-gray-300 tw-rounded tw-p-2.5 tw-w-full"
             type="email"
             id="email"
             value={email}
@@ -69,17 +69,17 @@ const ContactForm = () => {
         </div>
         <div className="form-group">
           <label htmlFor="message">Message:</label>
-          <textarea
+          <textarea className="tw-border tw-border-solid tw-border-gray-300 tw-rounded tw-p-2.5 tw-w-full"
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
-        {error && <div className="error">{error}</div>}
+        {error && <div className="error tw-text-red-600 tw-mb-2.5">{error}</div>}
         {isSent ? (
-          <div className="success">Message sent successfully!</div>
+          <div className="success tw-mb-2.5 tw-text-green-700">Message sent successfully!</div>
         ) : (
-          <button type="submit">Send Message</button>
+          <button type="submit" className="tw-text-white tw-py-2.5 tw-px-5 tw-border-none tw-bg-blue-700 tw-cursor-pointer">Send Message</button>
         )}
       </form>
     </div>

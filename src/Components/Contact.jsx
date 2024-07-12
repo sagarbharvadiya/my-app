@@ -7,7 +7,7 @@ const Contact = () => {
       <section className="contact">
         <div className="commonWidth">
        
-          <div className="d_flex">
+          <div className="tw-block  md:tw-flex tw-justify-around tw-items-center tw-m-auto tw-gap-[10px]  ">
             {/* <form className="php-email-form">
               <div className="d_flex">
                 <div className="form-group">
