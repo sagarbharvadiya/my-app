@@ -43,6 +43,6 @@
     "@types/node": "^20.14.10",
     "knip": "^5.25.1",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5.5.3"
+    "typescript": "^4.9.5"
   }
 }
