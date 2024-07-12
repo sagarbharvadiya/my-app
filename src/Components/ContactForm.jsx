@@ -46,7 +46,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form-container">
+    <div className="tw-w-full tw-py-2.5 tw-px-5 tw-rounded tw-bg-gray-100">
       <div className="tw-text-4xl tw-text-black tw-font-bold tw-py-4 tw-text-center tw-leading-normal">Contact Us</div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">

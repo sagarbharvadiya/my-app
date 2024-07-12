@@ -25,11 +25,19 @@ function Blogs() {
               {data.BlogPage.map((item, i) => {
                 return (
                   <React.Fragment key={i}>
-                    <article className="tw-block lg:tw-flex tw-gap-2 tw-my-4 tw-border-solid tw-border-b tw-border-grey-500 tw-py-3 tw-box-border">
+                    <article className="tw-block lg:tw-flex tw-gap-2 tw-my-4 tw-border-solid tw-border-b tw-border-grey-500  tw-py-3 tw-box-border">
                       <div className="tw-my-4 lg:tw-my-0 tw-w-full lg:tw-w-[60%]">
                         <h3 className="tw-font-bold tw-text-[22px]">
                           {" "}
-                          {item.title}
+                          <Link
+                            to={item.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="tw-text-black hover:tw-to-blue-700"
+                          >
+                           {item.title}
+                          </Link>
+                         
                         </h3>
                         <p className="!tw-text-17px tw-opacity-95 tw-break-normal tw-pt-2">
                           {item.description}
@@ -44,7 +52,7 @@ function Blogs() {
                             to={item.link}
                             target="_blank"
                             rel="noreferrer"
-                            className="tw-bg-blue-700 tw-py-1 tw-px-2 tw-text-sm tw-rounded-md tw-text-white hover:tw-text-white"
+                            className=" tw-bg-blue-700 tw-py-1 tw-px-2 tw-text-sm tw-rounded-md tw-text-white hover:tw-text-white"
                           >
                             Read More
                           </Link>
