@@ -1,106 +1,78 @@
 import React from "react";
-import reactbanner from "../img/react-banner.jpg";
 
 const ReactBlog = () => {
-  return (
-    <div className="commonWidth">
-      <div className="react-blog">
-        <div className="container">
-          <div className="blog-title">
-            <h1>
-              Use React hooks to manage state more efficiently in your web
-              applications
-            </h1>
-            <div className="title-img">
-              <img src={reactbanner} alt="Why Choose Drupal" />
-            </div>
-          </div>
-          <div className="react-post">
-            <div className="d-flex">
-              <div className="title">
-                <h3>lorem lorem</h3>
-              </div>
-              <div className="rich-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                  dolores dolor possimus eligendi. Maiores temporibus nam
-                  commodi similique. Repudiandae, dignissimos quos. Placeat
-                  exercitationem unde at vero fuga earum vel perferendis
-                  necessitatibus deleniti rem? Aperiam iure odio dicta enim
-                  reiciendis debitis rem et similique tempore amet. Quam id
-                  nihil harum quo.
-                </p>
-              </div>
-            </div>
-            <div className="vc-line"> <span></span></div>
-            <div className="d-flex">
-              <div className="title">
-                <h3>lorem lorem</h3>
-              </div>
-              <div className="rich-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                  dolores dolor possimus eligendi. Maiores temporibus nam
-                  commodi similique. Repudiandae, dignissimos quos. Placeat
-                  exercitationem unde at vero fuga earum vel perferendis
-                  necessitatibus deleniti rem? Aperiam iure odio dicta enim
-                  reiciendis debitis rem et similique tempore amet. Quam id
-                  nihil harum quo.
-                </p>
-              </div>
-            </div>
-            <div className="vc-line"> <span></span></div>
-            <div className="d-flex">
-              <div className="title">
-                <h3>lorem lorem</h3>
-              </div>
-              <div className="rich-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                  dolores dolor possimus eligendi. Maiores temporibus nam
-                  commodi similique. Repudiandae, dignissimos quos. Placeat
-                  exercitationem unde at vero fuga earum vel perferendis
-                  necessitatibus deleniti rem? Aperiam iure odio dicta enim
-                  reiciendis debitis rem et similique tempore amet. Quam id
-                  nihil harum quo.
-                </p>
-              </div>
-            </div>
-            <div className="vc-line"> <span></span></div>
-            <div className="d-flex-footer">
-            <div className="text">
-            <div className="title">
-            <h3>Get a Free Consultation Today!</h3>
-            </div>
-            <p>
-                At Krushna53, we specialize in building exceptional web
-                applications using Drupal. Our expert team is here to provide
-                you with a customized solution that meets your unique business
-                needs. Whether you're an SME, NGO, or startup, we can help you
-                achieve your digital goals.
-              </p>
+  const data = require("../ReactBlogData.json"); // Load the data from the JSON file
 
+  return (
+    <div className="container  tw-mx-auto tw-pt-7">
+      <div className="react-blog tw-pt-7">
+        <div className="tw-container tw-flex tw-flex-wrap tw-items-center">
+          {data && data.data && (
+            <div className="blog-title tw-w-full md:tw-w-4/5 tw-mx-auto">
+              <h1 className="tw-text-3xl tw-font-bold tw-mb-3">
+                {data.data.title}
+              </h1>
+              <div className="title-img tw-pt-5">
+                <img
+                  src={data.data.image}
+                  alt="Why Choose Drupal"
+                  className="tw-w-full tw-h-full tw-object-cover tw-py-2]"
+                />
+              </div>
             </div>
-            <div className="btn">
-            <div className="Krushna53-Con-button btn-box">
+          )}
+          {data &&
+            data.data &&
+            data.data.content &&
+            data.data.content.map((section, index) => (
+              <div
+                key={index}
+                className="react-post tw-m-auto tw-mt-7 tw-w-full md:tw-w-4/5"
+              >
+                <h3 className="tw-text-2xl tw-font-bold tw-mb-2">
+                  {section.title}
+                </h3>
+                <p className="tw-text-lg tw-mb-5">{section.text}</p>
+                {section.list && (
+                  <ul className="tw-list-none tw-m-0 tw-p-0">
+                    {section.list.map((item, index) => (
+                      <li
+                        key={index}
+                        className="tw-mb-4 tw-text-left tw-list-decimal"
+                      >
+                        <b className="tw-text-lg tw-font-bold">{item.item}</b>
+                        <p className="tw-text-lg tw-mb-0">{item.dis}</p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          {data && data.data && data.data.callToAction && (
+            <div className="tw-pt-7 tw-pb-7 tw-w-full md:tw-w-4/5 tw-m-auto">
+              <div className="tw-text tw-text-lg tw-mb-5">
+                <h3 className="tw-text-2xl tw-font-bold tw-mb-tw-py-2">
+                  {data.data.callToAction.title}
+                </h3>
+                <p className="tw-text-lg tw-mb-5">
+                  {data.data.callToAction.text}
+                </p>
+              </div>
               <a
-                href="https://bit.ly/3WbQEoH"
+                href={data.data.callToAction.link}
                 target="_blank"
                 rel="noreferrer"
-                className="btn-1"
+                className="tw-bg-orange-500 !tw-text-white tw-font-bold tw-px-tw-mb-5 tw-py-2 tw-rounded-[5px] tw-p-3"
               >
-                <button>Schedule Your Free Consultation</button>
+                {data.data.callToAction.button}
               </a>
             </div>
-            </div>
-           
-            </div>
-            <h5>
-              Let's work together to create a website that drives growth and
-              success. Click the button above to get started!
-            </h5>
-          </div>
+          )}
         </div>
+        <h5 className="tw-text-lg tw-mb-7 tw-w-full md:tw-w-4/5 tw-m-auto">
+          Let's work together to create a website that drives growth and
+          success. Click the button above to get started!
+        </h5>
       </div>
     </div>
   );
