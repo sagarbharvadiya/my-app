@@ -21,6 +21,7 @@ function NewHeader() {
   const navigate = useNavigate();
 
   const handleMenuItemClick = (link) => {
+    setIsNavOpen(false);
     if (link.startsWith("#")) {
       const currentUrl = location.pathname;
       if (currentUrl.startsWith("/blogs/")) {
