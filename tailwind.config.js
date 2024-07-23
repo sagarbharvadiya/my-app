@@ -5,7 +5,13 @@ module.exports = {
     ],
     prefix: "tw-",
     theme: {
-      extend: {},
+      extend: {
+        colors: {
+          'custom-gray': '#eee8e8',
+          'customBrown': '#8c3a29',
+        },
+        
+      },
     },
     plugins: [],
   }
