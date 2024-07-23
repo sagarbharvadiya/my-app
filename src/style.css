@@ -427,36 +427,6 @@ section.team,
   font-size: 24px;
 }
 
-.footer-section {
-  background-color: #eee8e8;
-}
-
-.logo {
-  max-width: 227px;
-}
-
-.logo img {
-  width: 100px;
-}
-
-.footerwrapper p {
-  font-size: 17px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.icon {
-  display: inline-block;
-  font-size: 27px;
-  color: #384baf;
-  margin: 0px 6px;
-}
-
-.icon:hover {
-  color: #8c3a29;
-}
-
 .footer-icon {
   text-decoration: none;
   margin: auto;
@@ -527,38 +497,6 @@ section.team,
   height: auto;
   border-radius: 100%;
   margin-left: 50px;
-}
-
-.footerwrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 95%;
-  margin: auto;
-}
-
-.logo {
-  max-width: 227px;
-}
-
-.logo img {
-  width: 100px;
-}
-
-.footer-icons {
-  display: flex;
-  max-width: 100%;
-}
-
-.footer-icon {
-  margin: auto;
-  text-decoration: none;
-}
-
-.icon {
-  color: #384baf;
-  display: inline-block;
-  font-size: 27px;
-  margin: 0 6px;
 }
 
 .Krushna53-Con-button.hide-mobile {
@@ -1310,6 +1248,10 @@ ul {
     width: 40%;
     margin: 0px;
   }
+  .blog-image img {
+    aspect-ratio: 3 / 2.3;
+  
+}
 }
 .Krushna53-Clients p {
   text-align: center;
