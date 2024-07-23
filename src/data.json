@@ -209,6 +209,14 @@
             "img":"../images/reactimg1.jpg",
             "date": "11,July,2024",
             "link": "/blogs/react-hooks"
+        },
+        {
+            "id": "3",
+            "title": "Building Your Website with ReactJS: A Comprehensive Guide",
+            "description": "Creating a website with ReactJS offers flexibility, performance, and a modern approach to web development. This guide will help you set up a React project, store content in JSON files, create a contact form using EmailJS or Formspree, add pricing plans with Stripe, manage content dynamically with Contentful, and deploy your site on Netlify, ensuring a modern and efficient development process.",
+            "img":"../images/React-web.jpg",
+            "date": "22,July,2024",
+            "link": "/blogs/build-your-website-with-reactjs"
         }
     ],
     "topics": [
