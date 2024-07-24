@@ -199,7 +199,7 @@
             "title": "Top 3 Reasons Why Drupal Should Be Considered for Your Business",
             "description": "Explore the top three benefits of choosing Drupal for your business website: unmatched flexibility and customizability, robust security measures, and exceptional content management capabilities. Discover how Drupal can help your business grow and succeed in the digital world.",
             "img":"../images/person-front-computer-working-html.jpg",
-            "date": "8,July,2024",
+            "date": "8th July,2024",
             "link": "/blogs/why-drupal"
         },
         {
@@ -207,7 +207,7 @@
             "title": "Understanding React Hooks: Simplifying State Management in Functional Components",
             "description": "React Hooks, introduced in React version 16.8, marked a significant shift in how developers build components and manage state in React applications. Prior to Hooks, stateful logic and lifecycle features were exclusive to class components. However, Hooks brought these capabilities to functional components, offering a more straightforward and functional approach to state management.",
             "img":"../images/reactimg1.jpg",
-            "date": "11,July,2024",
+            "date": "11th July,2024",
             "link": "/blogs/react-hooks"
         },
         {
@@ -215,7 +215,7 @@
             "title": "Building Your Website with ReactJS: A Comprehensive Guide",
             "description": "Creating a website with ReactJS offers flexibility, performance, and a modern approach to web development. This guide will help you set up a React project, store content in JSON files, create a contact form using EmailJS or Formspree, add pricing plans with Stripe, manage content dynamically with Contentful, and deploy your site on Netlify, ensuring a modern and efficient development process.",
             "img":"../images/React-web.jpg",
-            "date": "22,July,2024",
+            "date": "22th July,2024",
             "link": "/blogs/build-your-website-with-reactjs"
         }
     ],
