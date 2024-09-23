@@ -11,6 +11,8 @@ import Blog from './Page/Blog'
 import BlogPost from './Components/BlogPost'
 import ReactBlog from './Components/ReactBlog';
 import ReactWeb from './Components/ReactWeb';
+// import ReactWeb from './Components/DrupalBlog';
+import DrupalBlog from './Components/DrupalBlog';
 
 function App() {
     return (
@@ -25,6 +27,7 @@ function App() {
                 <Route exact path='/blogs/why-drupal' element={<BlogPost />} />
                 <Route exact path='/blogs/react-hooks' element={<ReactBlog />} />
                 <Route exact path='/blogs/build-your-website-with-reactjs' element={<ReactWeb/>} />
+                <Route exact path='/blogs/aws-s3-drupal-integration' element={<DrupalBlog/>} />
             </Routes>
             <Contact />
             <Footer />

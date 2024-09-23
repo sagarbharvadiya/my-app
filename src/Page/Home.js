@@ -8,7 +8,7 @@ import OurTeam from '../Components/OurTeam';
 import SomeOfOurWork from '../Components/SomeofOurWork';
 // import CareersPage from '../Components/CareersPage';
 // import JobDetails from '../Components/JobDetails';
-// import ReactBlog from '../Components/ReactBlog'
+// import DrupalBlog from '../Components/DrupalBlog'
 
 const Home = () => {
     return (
@@ -23,7 +23,7 @@ const Home = () => {
             <OurTeam />
             {/* <CareersPage/> */}
             {/* <JobDetails/> */}
-            {/* <ReactBlog/> */}
+            {/* <DrupalBlog/> */}
         
         </>
     )

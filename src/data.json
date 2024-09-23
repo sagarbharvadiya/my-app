@@ -217,6 +217,14 @@
             "img":"../images/React-web.jpg",
             "date": "22th July,2024",
             "link": "/blogs/build-your-website-with-reactjs"
+        },
+        {
+            "id": "4",
+            "title": "How to Create a Service in Drupal to Integrate AWS S3 and Fetch Data from Uploaded Files",
+            "description": "In this post, I will guide you through the steps to create a custom service in Drupal that integrates with AWS S3. By the end of this tutorial, you’ll have a service that can fetch data from files uploaded to your S3 bucket. This integration can be particularly useful for handling large datasets, like CSV files, and processing them within Drupal.",
+            "img":"../images/person-working-html-computer.jpg",
+            "date": "23th September,2024",
+            "link": "/blogs/aws-s3-drupal-integration"
         }
     ],
     "topics": [
