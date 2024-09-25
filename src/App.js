@@ -11,7 +11,7 @@ import Blog from './Page/Blog'
 import BlogPost from './Components/BlogPost'
 import ReactBlog from './Components/ReactBlog';
 import ReactWeb from './Components/ReactWeb';
-// import ReactWeb from './Components/DrupalBlog';
+import ChatgptBlog from './Components/ChatgptBlog';
 import DrupalBlog from './Components/DrupalBlog';
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
                 <Route exact path='/blogs/react-hooks' element={<ReactBlog />} />
                 <Route exact path='/blogs/build-your-website-with-reactjs' element={<ReactWeb/>} />
                 <Route exact path='/blogs/aws-s3-drupal-integration' element={<DrupalBlog/>} />
+                <Route exact path='/blogs/smarter-coding-with-chatgpt' element={<ChatgptBlog/>} />
             </Routes>
             <Contact />
             <Footer />
