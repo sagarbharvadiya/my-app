@@ -1,0 +1,164 @@
+{
+    "Technologies": [
+        {
+            "id": "1",
+            "img": "/images/drupal.svg",
+            "description": "Drupal is a free and open-source content management system (CMS) that allows users to build and manage websites and online applications. It is written in PHP and is known for its flexibility, scalability, and extensive module ecosystem. Drupal is used by individuals, organizations, and enterprises to create a wide range of websites, including personal blogs, corporate websites, government portals, e-commerce sites, and social networking platforms."
+        },
+        {
+            "id": "2",
+            "img": "/images/Group 4.png",
+            "description": "React.js is a JavaScript library for building user interfaces (UIs) for web applications. It was developed by Facebook and is widely used for creating interactive and reusable UI components. React follows a component-based approach, where the UI is divided into independent, reusable pieces called components. These components can be composed together to build complex user interfaces."
+        },
+        {
+            "id": "3",
+            "img": "/images/Group 1.png",
+            "description": "Gatsby is a modern static site generator built on top of React.js. It is designed to create fast, performant, and highly optimized websites and web applications. Gatsby leverages the power of React components and GraphQL to build static sites that can be easily deployed and hosted on various platforms."
+        },
+        {
+            "id": "4",
+            "img": "/images/contentful-logo-vector.svg",
+            "description": "Contentful is a headless content management system (CMS) that provides an API-first approach for managing and delivering content. It is designed to allow developers to create and manage content separately from the presentation layer, giving them the flexibility to use any frontend technology or platform to consume and display content."
+        },
+        {
+            "id": "5",
+            "img": "/images/Group 2.png",
+            "description": "Netlify is a cloud-based platform that provides hosting and deployment services for static websites and web applications. It offers a comprehensive set of features and tools to streamline the development, deployment, and management of web projects."
+        },
+        {
+            "id": "6",
+            "img": "/images/html5.svg",
+            "description": "HTML5 and CSS are the building blocks of web development, enabling you to create structured content and apply visual styles to build engaging and interactive websites. They are complemented by JavaScript, which adds interactivity and dynamic behavior to web pages."
+        },
+        {
+            "id": "7",
+            "img": "/images/bootstrap.svg",
+            "description": "Bootstrap provides a collection of CSS and JavaScript components, such as grids, typography, forms, buttons, navigation, and more. It simplifies web development by offering pre-styled components that can be easily customized and integrated into your projects. "
+        },
+        {
+            "id": "8",
+            "img": "/images/Group 3.png",
+            "description": "Figma is a cloud-based design and prototyping tool used for creating user interfaces (UI), user experience (UX) designs, and interactive prototypes. It is popular among designers and design teams for its collaborative features and its ability to streamline the design workflow. "
+        },
+        {
+            "id": "9",
+            "img": "/images/adobe-photoshop.svg",
+            "description": "Photoshop is a powerful and widely used raster graphics editing software developed by Adobe. It is primarily used for image editing, graphic design, and digital art creation. Photoshop provides a vast array of tools and features that allow users to manipulate and enhance images with precision and creativity."
+        },
+        {
+            "id": "10",
+            "img": "/images/zoho.svg",
+            "description": "Zoho is a comprehensive suite of cloud-based software applications designed to help businesses manage various aspects of their operations. Zoho offers a wide range of applications across multiple categories, including customer relationship management (CRM), project management, human resources, finance, collaboration, marketing, and more. "
+        }
+    ],
+    "Clients": [
+        {
+            "id": "1",
+            "image": "/images/logo1.png"
+        },
+        {
+            "id": "2",
+            "image": "/images/logo6.png"
+           
+        },
+        {
+            "id": "3",
+            "image": "/images/itaa (1).jpeg"
+        },
+        {
+            "id": "4",
+            "image": "/images/Logo_001.1957aa1c.png"
+        
+        },
+        {
+            "id": "5",
+            "image": "/images/spacebase-logo-300x300-1.jpg"
+        },
+        {
+            "id": "6",
+            "image": "/images/nav_logo2.png"
+        },
+        {
+            "id": "7",
+            "image": "/images/caribyte.png"
+        }
+    ],
+    "some_work": [
+        {
+            "id": 1,
+            "img": "/images/saata.jpg",
+            "title": "Converted a Wordpress website to Contentful/ReactJs Website",
+            "link": "/"
+        },
+        {
+            "id": 2,
+            "img": "/images/epta.jpg",
+            "title": "Built  Website on Gatsby",
+            "link": "/"
+        },
+        {
+            "id": 3,
+            "img": "/images/oneplus.jpg",
+            "title": "Built a Single Page Website on ReactJs",
+            "link": "/"
+        }
+       
+    ],
+  "SomeOfOurWorkDetails":[
+    {
+        "id":"1",
+        "title":"Converted a Wordpress website to Contentful/ReactJs Website",
+        "img": "/images/SAATA.webm",
+        "tag":"REACT",
+        "tag1":"Netlify",
+        "tag2":"Contentful",
+        "Client":"Client Overview",
+        "dis":"NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
+        "slider1":"/images/saata.jpg",
+        "slider2":"/images/saata-tab.jpg",
+        "slider3":"/images/saata-mobile.jpg",
+        "subhedding":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
+        "Overview":"Project Overview",
+        "des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
+        "list1":"100% WCAG 2.0 compliant website",
+        "list2":"100% WCAG 2.0 compliant website"
+
+    },
+    {
+        "id":"2",
+        "title":"Built  Website on Gatsby",
+        "img": "/images/Home _ Epta Layers.mp4",
+        "tag":"Gatsby",
+        "tag1":"Netlify",
+        "tag2":"Css",
+        "Client":"Client Overview",
+        "dis":"NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
+        "slider1":"/images/epta.jpg",
+        "slider2":"/images/epta-tab.jpg",
+        "slider3":"/images/epta-mobile.jpg",
+        "subhedding":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
+        "Overview":"Project Overview",
+        "des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
+        "list1":"100% WCAG 2.0 compliant website",
+        "list2":"100% WCAG 2.0 compliant website"
+    },
+    {
+        "id":"3",
+        "title":"Built a Single Page Website on ReactJs",
+        "img": "/images/One-Plus.mp4",
+        "tag":"REACT",
+        "tag1":"CSS",
+        "tag2":"Netlify",
+        "Client":"Client Overview",
+        "dis":"NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
+        "slider1":"/images/oneplus.jpg",
+        "slider2":"/images/oneplus-tab.jpg",
+        "slider3":"/images/oneplus-mobile.jpg",
+        "subhedding":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
+        "Overview":"Project Overview",
+        "des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
+        "list1":"100% WCAG 2.0 compliant website",
+        "list2":"100% WCAG 2.0 compliant website"
+    }
+  ]
+}
