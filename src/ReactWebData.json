@@ -1,0 +1,181 @@
+{
+    "title": "Building Your Website with ReactJS: A Comprehensive Guide",
+    "introduction": "Creating a website with ReactJS offers flexibility, performance, and a modern approach to web development. This guide will walk you through the process of building your website using ReactJS, incorporating JSON for content storage, and utilizing various tools and services for an efficient and streamlined development experience.",
+    "image": "../images/programming-background-with-person-working-with-codes-computer (1).jpg",
+    "steps": [
+      {
+        "title": "Step 1: Set Up Your ReactJS Project",
+        "content": [
+          {
+            "type": "text",
+            "text": "Start by setting up a new React project. Use the Create React App tool for a quick start:"
+          },
+          {
+            "type": "command",
+            "command": "npx create-react-app my-website"
+          },
+          {
+            "type": "command",
+            "command": "cd my-website"
+          },
+          {
+            "type": "command",
+            "command": "npm start"
+          }
+        ]
+      },
+      {
+        "title": "Step 2: Store Content in JSON Files",
+        "content": [
+          {
+            "type": "text",
+            "text": "Instead of hardcoding content, store it in JSON files. Create a content folder in your src directory and add your JSON files. For example, create a home.json for your homepage content:"
+          },
+          {
+            "type": "code",
+            "language": "json",
+            "code": "{\n  \"title\": \"Welcome to My Website\",\n  \"description\": \"This is a ReactJS-based website with content stored in JSON files.\"\n}"
+          },
+          {
+            "type": "text",
+            "text": "Load the JSON content in your React components:"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "import React, { useState, useEffect } from 'react';\nimport homeContent from './content/home.json';\n\nconst Home = () => {\n  const [content, setContent] = useState({});\n\n  useEffect(() => {\n    setContent(homeContent);\n  }, []);\n\n  return (\n    <div>\n      <h1>{content.title}</h1>\n      <p>{content.description}</p>\n    </div>\n  );\n};\n\nexport default Home;"
+          }
+        ]
+      },
+      
+        {
+            "title": "Step 3: Create a Contact Form Using EmailJS or Formspree",
+            "content": [
+              {
+                "type": "text",
+                "text": "To add a contact form, you can use EmailJS or Formspree. Here’s how to integrate Formspree:"
+              },
+              {
+                "type": "text",
+                "text": "1. Create a new form in your Formspree account."
+              },
+              {
+                "type": "text",
+                "text": "2. Copy the form URL and use it in your React component:"
+              },
+              {
+                "type": "link",
+                "text": "https://formspree.io/f/{your-form-id}"
+              },
+              {
+                "type": "code",
+                "language": "jsx",
+                "code": "const ContactForm = () => (\n  <form action=\"https://formspree.io/f/{your-form-id}\" method=\"POST\">\n    <label>\n      Your Email:\n      <input type=\"email\" name=\"email\" required />\n    </label>\n    <label>\n      Your Message:\n      <textarea name=\"message\" required />\n    </label>\n    <button type=\"submit\">Send</button>\n  </form>\n);\n\nexport default ContactForm;"
+              }
+        ]
+      },
+      {
+        "title": "Step 4: Add Pricing Plans Using Razorpay or Stripe",
+        "content": [
+          {
+            "type": "text",
+            "text": "Integrate a payment gateway to offer pricing plans. Here’s a basic example using Stripe:"
+          },
+          {
+            "type": "text",
+            "text": "1. Install the Stripe package:"
+          },
+          {
+            "type": "command",
+            "command": "npm install @stripe/react-stripe-js @stripe/stripe-js"
+          },
+          {
+            "type": "text",
+            "text": "2. Create a checkout component:"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "import React from 'react';\nimport { loadStripe } from '@stripe/stripe-js';\nimport { Elements } from '@stripe/react-stripe-js';\nimport CheckoutForm from './CheckoutForm'; // Your custom checkout form component\n\nconst stripePromise = loadStripe('your-publishable-key');\n\nconst Pricing = () => (\n  <Elements stripe={stripePromise}>\n    <CheckoutForm />\n  </Elements>\n);\n\nexport default Pricing;"
+          }
+        ]
+      },
+      {
+        "title": "Step 5: Use Contentful CMS for Editable Content",
+        "content": [
+          {
+            "type": "text",
+            "text": "To manage and edit your content dynamically, integrate Contentful:"
+          },
+          {
+            "type": "text",
+            "text": "1. Sign up for a Contentful account and create your content models."
+          },
+          {
+            "type": "text",
+            "text": "2. Install the Contentful package:"
+          },
+          {
+            "type": "command",
+            "command": "npm install contentful"
+          },
+          {
+            "type": "text",
+            "text": "3. Fetch and display Contentful data in your components:"
+          },
+          {
+            "type": "code",
+            "language": "jsx",
+            "code": "import React, { useState, useEffect } from 'react';\nimport { createClient } from 'contentful';\n\nconst client = createClient({\n  space: 'your-space-id',\n  accessToken: 'your-access-token'\n});\n\nconst ContentfulComponent = () => {\n  const [data, setData] = useState(null);\n\n  useEffect(() => {\n    client.getEntry('your-entry-id').then((entry) => setData(entry.fields));\n  }, []);\n\n  if (!data) return <div>Loading...</div>;\n\n  return (\n    <div>\n      <h1>{data.title}</h1>\n      <p>{data.description}</p>\n    </div>\n  );\n};\n\nexport default ContentfulComponent;"
+          }
+        ]
+      },
+      {
+        "title": "Step 6: Host Your Website on Netlify",
+        "content": [
+          {
+            "type": "text",
+            "text": "Deploy your website using Netlify for an easy and reliable hosting solution:"
+          },
+          {
+            "type": "text",
+            "text": "1. Push your code to GitHub, GitLab, or Bitbucket."
+          },
+          {
+            "type": "text",
+            "text": "2. Create a new site on Netlify and link it to your repository."
+          },
+          {
+            "type": "text",
+            "text": "3. Configure your build settings and deploy."
+          }
+        ]
+      },
+      {
+        "title": "Step 7: Link Your Domain to Netlify",
+        "content": [
+          {
+            "type": "text",
+            "text": "Finally, link your custom domain to your Netlify site:"
+          },
+          {
+            "type": "text",
+            "text": "1. Go to your site settings on Netlify."
+          },
+          {
+            "type": "text",
+            "text": "2. Add a custom domain and follow the DNS configuration instructions."
+          }
+        ]
+      }
+    ],
+    "conclusion": "By following these steps, you’ll have a modern, efficient, and easily manageable website built with ReactJS. This setup allows for flexible content management, secure form handling, and scalable deployment, ensuring your website is ready to meet your needs and grow with your business.",
+
+  "callToAction": {
+    "title": "Get a Free Consultation Today!",
+    "text": "At Krushna53, we specialize in building exceptional web applications using Drupal and JavaScript frameworks like ReactJs' in all the places wherever we have it. Our expert team is here to provide you with a customized solution that meets your unique business needs.",
+    "button": "Schedule Your Free Consultation",
+    "link":"https://bit.ly/3WbQEoH"
+  }
+
+}

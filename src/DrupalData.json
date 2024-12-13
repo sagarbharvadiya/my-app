@@ -1,0 +1,92 @@
+{
+    "title": "How to Create a Service in Drupal to Integrate AWS S3 and Fetch Data from Uploaded Files",
+    "introduction": "In this post, I will guide you through the steps to create a custom service in Drupal that integrates with AWS S3. By the end of this tutorial, you’ll have a service that can fetch data from files uploaded to your S3 bucket. This integration can be particularly useful for handling large datasets, like CSV files, and processing them within Drupal.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Install AWS SDK for PHP in Drupal",
+        "description": "To start, we need to install the AWS SDK for PHP, which allows us to communicate with AWS S3 from within Drupal.",
+        "substeps": [
+          {
+            "step_number": 1,
+            "title": "Install AWS SDK using Composer",
+            "commands": [
+              {
+                "bash": "composer require aws/aws-sdk-php"
+              }
+            ],
+            "description": "This will download the required package and make it available to your project."
+          }
+        ]
+      },
+      {
+        "step_number": 2,
+        "title": "Create a Custom Module for S3 Integration",
+        "description": "Next, we will create a custom module called s3_csv_importer that contains the AWS S3 integration logic.",
+        "substeps": [
+          {
+            "step_number": 1,
+            "title": "Define the module",
+            "code": {
+              "filename": "s3_csv_importer.info.yml",
+              "language": "yaml",
+              "content": "name: 'S3 CSV Importer'\ntype: module\ndescription: 'A module for integrating AWS S3 and fetching CSV data.'\ncore_version_requirement: ^10\npackage: Custom\ndependencies:\n  - aws/aws-sdk-php"
+            },
+            "description": "Create the s3_csv_importer.info.yml file in your module directory (/modules/custom/s3_csv_importer/)."
+          },
+          {
+            "step_number": 2,
+            "title": "Create the S3 Service",
+            "description": "Now, let’s create the actual service that communicates with AWS S3.",
+            "code": {
+              "filename": "/src/Service/S3CsvImporter.php",
+              "language": "php",
+              "content": "<?php\n\nnamespace Drupal\\s3_csv_importer\\Service;\n\nuse Aws\\S3\\S3Client;\nuse Psr\\Log\\LoggerInterface;\n\n/**\n * Class S3CsvImporter for importing files from AWS S3.\n */\nclass S3CsvImporter {\n\n  protected $s3Client;\n  protected $logger;\n\n  public function __construct($aws_key, $aws_secret, $region, LoggerInterface $logger) {\n    $this->logger = $logger;\n\n    $this->s3Client = new S3Client([\n      'version' => 'latest',\n      'region' => $region,\n      'credentials' => [\n        'key'    => $aws_key,\n        'secret' => $aws_secret,\n      ],\n    ]);\n  }\n\n  public function fetchFileData($bucket, $file_key) {\n    try {\n      $result = $this->s3Client->getObject([\n        'Bucket' => $bucket,\n        'Key'    => $file_key,\n      ]);\n\n      return (string) $result['Body'];\n    }\n    catch (\\Exception $e) {\n      $this->logger->error('Failed to fetch file from S3: @message', ['@message' => $e->getMessage()]);\n      return NULL;\n    }\n  }\n}"
+            }
+          }
+        ]
+      },
+      {
+        "step_number": 3,
+        "title": "Create a Configuration Form for AWS Credentials",
+        "description": "We want to manage AWS credentials within the Drupal admin interface to make it easier to switch between environments (e.g., Dev, Test, Live).",
+        "substeps": [
+          {
+            "step_number": 1,
+            "title": "Create the Form",
+            "code": {
+              "filename": "/src/Form/S3CsvImporterSettingsForm.php",
+              "language": "php",
+              "content": "<?php\n\nnamespace Drupal\\s3_csv_importer\\Form;\n\nuse Drupal\\Core\\Form\\ConfigFormBase;\nuse Drupal\\Core\\Form\\FormStateInterface;\n\n/**\n * Settings form for S3 CSV Importer module.\n */\nclass S3CsvImporterSettingsForm extends ConfigFormBase {\n\n  protected function getEditableConfigNames() {\n    return ['s3_csv_importer.settings'];\n  }\n\n  public function getFormId() {\n    return 's3_csv_importer_settings_form';\n  }\n\n  public function buildForm(array $form, FormStateInterface $form_state) {\n    $config = $this->config('s3_csv_importer.settings');\n\n    $form['aws_key'] = [\n      '#type' => 'textfield',\n      '#title' => $this->t('AWS Access Key'),\n      '#default_value' => $config->get('aws_key'),\n    ];\n\n    $form['aws_secret'] = [\n      '#type' => 'textfield',\n      '#title' => $this->t('AWS Secret Key'),\n      '#default_value' => $config->get('aws_secret'),\n    ];\n\n    $form['region'] = [\n      '#type' => 'textfield',\n      '#title' => $this->t('AWS Region'),\n      '#default_value' => $config->get('region'),\n    ];\n\n    return parent::buildForm($form, $form_state);\n  }\n\n  public function submitForm(array &$form, FormStateInterface $form_state) {\n    $this->config('s3_csv_importer.settings')\n      ->set('aws_key', $form_state->getValue('aws_key'))\n      ->set('aws_secret', $form_state->getValue('aws_secret'))\n      ->set('region', $form_state->getValue('region'))\n      ->save();\n\n    parent::submitForm($form, $form_state);\n  }\n}"
+            }
+          }
+        ]
+      },
+      {
+        "step_number": 4,
+        "title": "Use the Service in a Controller to Fetch and Display Data",
+        "description": "Finally, let’s create a controller that fetches data from S3 using the service we created and displays it on a Drupal page.",
+        "substeps": [
+          {
+            "step_number": 1,
+            "title": "Create the Controller",
+            "code": {
+              "filename": "/src/Controller/S3CsvImportController.php",
+              "language": "php",
+              "content": "<?php\n\nnamespace Drupal\\s3_csv_importer\\Controller;\n\nuse Drupal\\Core\\Controller\\ControllerBase;\nuse Symfony\\Component\\DependencyInjection\\ContainerInterface;\nuse Drupal\\s3_csv_importer\\Service\\S3CsvImporter;\n\n/**\n * Class S3CsvImportController.\n */\nclass S3CsvImportController extends ControllerBase {\n\n  protected $s3CsvImporter;\n\n  public function __construct(S3CsvImporter $s3CsvImporter) {\n    $this->s3CsvImporter = $s3CsvImporter;\n  }\n\n  public static function create(ContainerInterface $container) {\n    return new static(\n      $container->get('s3_csv_importer.importer')\n    );\n  }\n\n  public function fetchData() {\n    $bucket = 'your-s3-bucket';\n    $file_key = 'path/to/your/file.csv';\n    $data = $this->s3CsvImporter->fetchFileData($bucket, $file_key);\n\n    return [\n      '#markup' => '<pre>' . print_r($data, TRUE) . '</pre>',\n    ];\n  }\n}"
+            }
+          }
+        ]
+      }
+    ],
+    "conclusion": "We’ve now successfully created a service in Drupal that integrates with AWS S3. This setup allows you to fetch and display data from S3 buckets, and the service can easily be extended for more complex use cases, such as processing large datasets.",
+   "callToAction": {
+    "title": "Get a Free Consultation Today!",
+    "text": "At Krushna53, we specialize in building exceptional web applications using Drupal and JavaScript frameworks like ReactJs' in all the places wherever we have it. Our expert team is here to provide you with a customized solution that meets your unique business needs.",
+    "button": "Schedule Your Free Consultation",
+    "link":"https://bit.ly/3WbQEoH"
+  }
+
+}
+
+  

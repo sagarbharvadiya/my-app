@@ -1,0 +1,294 @@
+{
+    "Navbar": [
+        {
+            "id": "1",
+            "menu": "Home",
+            "link": ""
+        },
+        {
+            "id": "2",
+            "menu": "About",
+            "link": "#about"
+        },
+        {
+            "id": "3",
+            "menu": "Services",
+            "link": "#services"
+        },
+        {
+            "id": "4",
+            "menu": "Our Clients",
+            "link": "#clients"
+        },
+        {
+            "id": "5",
+            "menu": "Our Team",
+            "link": "#team"
+        },
+        {
+            "id": "5",
+            "menu": "Blogs",
+            "link": "blog"
+        }
+    ],
+    "Technologies": [
+        {
+            "id": "1",
+            "img": "/images/drupal.svg",
+            "description": "Drupal is a free and open-source content management system (CMS) that allows users to build and manage websites and online applications. It is written in PHP and is known for its flexibility, scalability, and extensive module ecosystem. Drupal is used by individuals, organizations, and enterprises to create a wide range of websites, including personal blogs, corporate websites, government portals, e-commerce sites, and social networking platforms."
+        },
+        {
+            "id": "2",
+            "img": "/images/Group 4.png",
+            "description": "React.js is a JavaScript library for building user interfaces (UIs) for web applications. It was developed by Facebook and is widely used for creating interactive and reusable UI components. React follows a component-based approach, where the UI is divided into independent, reusable pieces called components. These components can be composed together to build complex user interfaces."
+        },
+        {
+            "id": "3",
+            "img": "/images/Group 1.png",
+            "description": "Gatsby is a modern static site generator built on top of React.js. It is designed to create fast, performant, and highly optimized websites and web applications. Gatsby leverages the power of React components and GraphQL to build static sites that can be easily deployed and hosted on various platforms."
+        },
+        {
+            "id": "4",
+            "img": "/images/contentful-logo-vector.svg",
+            "description": "Contentful is a headless content management system (CMS) that provides an API-first approach for managing and delivering content. It is designed to allow developers to create and manage content separately from the presentation layer, giving them the flexibility to use any frontend technology or platform to consume and display content."
+        },
+        {
+            "id": "5",
+            "img": "/images/Group 2.png",
+            "description": "Netlify is a cloud-based platform that provides hosting and deployment services for static websites and web applications. It offers a comprehensive set of features and tools to streamline the development, deployment, and management of web projects."
+        },
+        {
+            "id": "6",
+            "img": "/images/html5.svg",
+            "description": "HTML5 and CSS are the building blocks of web development, enabling you to create structured content and apply visual styles to build engaging and interactive websites. They are complemented by JavaScript, which adds interactivity and dynamic behavior to web pages."
+        },
+        {
+            "id": "7",
+            "img": "/images/bootstrap.svg",
+            "description": "Bootstrap provides a collection of CSS and JavaScript components, such as grids, typography, forms, buttons, navigation, and more. It simplifies web development by offering pre-styled components that can be easily customized and integrated into your projects. "
+        },
+        {
+            "id": "8",
+            "img": "/images/Group 3.png",
+            "description": "Figma is a cloud-based design and prototyping tool used for creating user interfaces (UI), user experience (UX) designs, and interactive prototypes. It is popular among designers and design teams for its collaborative features and its ability to streamline the design workflow. "
+        },
+        {
+            "id": "9",
+            "img": "/images/adobe-photoshop.svg",
+            "description": "Photoshop is a powerful and widely used raster graphics editing software developed by Adobe. It is primarily used for image editing, graphic design, and digital art creation. Photoshop provides a vast array of tools and features that allow users to manipulate and enhance images with precision and creativity."
+        },
+        {
+            "id": "10",
+            "img": "/images/zoho.svg",
+            "description": "Zoho is a comprehensive suite of cloud-based software applications designed to help businesses manage various aspects of their operations. Zoho offers a wide range of applications across multiple categories, including customer relationship management (CRM), project management, human resources, finance, collaboration, marketing, and more. "
+        }
+    ],
+    "Clients": [
+        {
+            "id": "1",
+            "image": "/images/logo1.png"
+        },
+        {
+            "id": "2",
+            "image": "/images/logo6.png"
+        },
+        {
+            "id": "3",
+            "image": "/images/itaa (1).jpeg"
+        },
+        {
+            "id": "4",
+            "image": "/images/Logo_001.1957aa1c.png"
+        },
+        {
+            "id": "5",
+            "image": "/images/spacebase-logo-300x300-1.jpg"
+        },
+        {
+            "id": "6",
+            "image": "/images/nav_logo2.png"
+        },
+        {
+            "id": "7",
+            "image": "/images/caribyte.png"
+        },
+        {
+            "id": "8",
+            "image": "/images/yugma.webp"
+        }
+    ],
+    "some_work": [
+        {
+            "id": 1,
+            "img": "/images/saata.jpg",
+            "title": "Converted a Wordpress website to Contentful/ReactJs Website",
+            "link": "/"
+        },
+        {
+            "id": 2,
+            "img": "/images/epta.jpg",
+            "title": "Built  Website on Gatsby",
+            "link": "/"
+        },
+        {
+            "id": 3,
+            "img": "/images/oneplus.jpg",
+            "title": "Built a Single Page Website on ReactJs",
+            "link": "/"
+        }
+    ],
+    "SomeOfOurWorkDetails": [
+        {
+            "id": "1",
+            "title": "Converted a Wordpress website to Contentful/ReactJs Website",
+            "img": "/images/SAATA.webm",
+            "tag": "REACT",
+            "tag1": "Netlify",
+            "tag2": "Contentful",
+            "Client": "Client Overview",
+            "dis": "NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
+            "slider1": "/images/saata.jpg",
+            "slider2": "/images/saata-tab.jpg",
+            "slider3": "/images/saata-mobile.jpg",
+            "subhedding": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
+            "Overview": "Project Overview",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
+            "list1": "100% WCAG 2.0 compliant website",
+            "list2": "100% WCAG 2.0 compliant website"
+        },
+        {
+            "id": "2",
+            "title": "Built  Website on Gatsby",
+            "img": "/images/Home _ Epta Layers.mp4",
+            "tag": "Gatsby",
+            "tag1": "Netlify",
+            "tag2": "Css",
+            "Client": "Client Overview",
+            "dis": "NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
+            "slider1": "/images/epta.jpg",
+            "slider2": "/images/epta-tab.jpg",
+            "slider3": "/images/epta-mobile.jpg",
+            "subhedding": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
+            "Overview": "Project Overview",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
+            "list1": "100% WCAG 2.0 compliant website",
+            "list2": "100% WCAG 2.0 compliant website"
+        },
+        {
+            "id": "3",
+            "title": "Built a Single Page Website on ReactJs",
+            "img": "/images/One-Plus.mp4",
+            "tag": "REACT",
+            "tag1": "CSS",
+            "tag2": "Netlify",
+            "Client": "Client Overview",
+            "dis": "NSE Clearing Limited (NSCCL)is a subsidiary of the National Stock Exchange (NSE), the largest stock exchange in India, and the world's largest derivatives exchange by the number of traded contracts. NSE Clearing is responsible for clearing and settling all trades executed on NSE, deposit, collateral management, and risk management functions.",
+            "slider1": "/images/oneplus.jpg",
+            "slider2": "/images/oneplus-tab.jpg",
+            "slider3": "/images/oneplus-mobile.jpg",
+            "subhedding": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem",
+            "Overview": "Project Overview",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit",
+            "list1": "100% WCAG 2.0 compliant website",
+            "list2": "100% WCAG 2.0 compliant website"
+        }
+    ],
+    "BlogPage": [
+        {
+            "id": "1",
+            "title": "Top 3 Reasons Why Drupal Should Be Considered for Your Business",
+            "description": "Explore the top three benefits of choosing Drupal for your business website: unmatched flexibility and customizability, robust security measures, and exceptional content management capabilities. Discover how Drupal can help your business grow and succeed in the digital world.",
+            "img":"../images/person-front-computer-working-html.jpg",
+            "date": "8th July,2024",
+            "link": "/blogs/why-drupal"
+        },
+        {
+            "id": "2",
+            "title": "Understanding React Hooks: Simplifying State Management in Functional Components",
+            "description": "React Hooks, introduced in React version 16.8, marked a significant shift in how developers build components and manage state in React applications. Prior to Hooks, stateful logic and lifecycle features were exclusive to class components. However, Hooks brought these capabilities to functional components, offering a more straightforward and functional approach to state management.",
+            "img":"../images/reactimg1.jpg",
+            "date": "11th July,2024",
+            "link": "/blogs/react-hooks"
+        },
+        {
+            "id": "3",
+            "title": "Building Your Website with ReactJS: A Comprehensive Guide",
+            "description": "Creating a website with ReactJS offers flexibility, performance, and a modern approach to web development. This guide will help you set up a React project, store content in JSON files, create a contact form using EmailJS or Formspree, add pricing plans with Stripe, manage content dynamically with Contentful, and deploy your site on Netlify, ensuring a modern and efficient development process.",
+            "img":"../images/React-web.jpg",
+            "date": "22th July,2024",
+            "link": "/blogs/build-your-website-with-reactjs"
+        },
+        {
+            "id": "4",
+            "title": "How to Create a Service in Drupal to Integrate AWS S3 and Fetch Data from Uploaded Files",
+            "description": "In this post, I will guide you through the steps to create a custom service in Drupal that integrates with AWS S3. By the end of this tutorial, you’ll have a service that can fetch data from files uploaded to your S3 bucket. This integration can be particularly useful for handling large datasets, like CSV files, and processing them within Drupal.",
+            "img":"../images/person-working-html-computer.jpg",
+            "date": "23th September,2024",
+            "link": "/blogs/aws-s3-drupal-integration"
+        },
+        {
+            "id": "5",
+            "title": "Maximizing ChatGPT for Smarter Coding: A Rule You Should Follow",
+            "description": "In the evolving world of software development, AI-driven tools like ChatGPT are becoming increasingly useful for implementing complex functionalities. With just a prompt, developers can generate functional code snippets, which saves time and enhances productivity. However, as convenient as this is, there is one golden rule every coder should follow: always make sure you fully understand the code you use.",
+            "img":"../images/opened-ai-chat-laptop.jpg",
+            "date": "27th September,2024",
+            "link": "/blogs/smarter-coding-with-chatgpt"
+        }
+    ],
+    "topics": [
+        {
+            "name": "Drupal",
+            "url": "/blogs/why-drupal"
+        },
+        {
+            "name": "React",
+            "url": "/blogs/react-hooks"
+        }
+    ],
+    "DrupalBlog": [
+    {
+      "id": "1",
+      "title": "1. Flexibility and Customizability",
+      "tag": "Scalability:",
+      "tag1": "Custom Modules and Themes:",
+      "tag2": "Integration Capabilities:",
+      "richtext": "Drupal can handle everything from small websites to large-scale, high-traffic platforms. It's designed to grow with your business, making it an ideal choice for companies that anticipate expansion.",
+      "richtext1": "With a vast repository of modules and themes, Drupal allows for extensive customization. You can tailor the functionality and appearance of your website to meet your specific business needs.",
+      "richtext2": "Drupal seamlessly integrates with various third-party applications and services, such as CRM systems, marketing automation tools, and e-commerce platforms, ensuring a cohesive digital ecosystem."
+    },
+    {
+      "id": "2",
+      "title": "2. Robust Security",
+      "tag": "Active Security Team:",
+      "tag1": "Granular Access Control:",
+      "tag2": "Regular Updates:",
+      "richtext": "Drupal has a dedicated security team that actively monitors and addresses vulnerabilities, ensuring that your website remains secure against potential threats.",
+      "richtext1": "Drupal offers fine-grained permissions and user roles, allowing businesses to control access to different parts of the website and ensuring sensitive data is protected.",
+      "richtext2": "Frequent security updates and patches are released by the Drupal community, keeping your site protected against emerging threats and ensuring compliance with industry standards."
+    },
+    {
+      "id": "3",
+      "title": "3. Content Management Excellence",
+      "tag": "Multilingual Support:",
+      "tag1": "Content Workflow:",
+      "tag2": "SEO and Performance Optimization:",
+      "richtext": "Drupal is designed with multilingual capabilities, making it easy to create and manage content in multiple languages. This is particularly beneficial for businesses operating in diverse markets.",
+      "richtext1": "Drupal provides robust content creation and publishing workflows, enabling teams to collaborate efficiently. Features like version control, content moderation, and scheduling streamline the content management process.",
+      "richtext2": "Drupal is built with SEO best practices in mind, offering tools and modules to optimize your website for search engines. Additionally, its performance optimization features ensure fast loading times, enhancing the user experience and improving search engine rankings."
+    }
+  ],
+   "BlogSummary":[
+    {
+     "id":"1",
+     "title":"",
+     "richtext":"By leveraging Drupal's powerful features, businesses can create highly customized, secure, and scalable websites that cater to their unique needs, ultimately driving growth and success in the digital landscape."
+
+    },
+    {
+        "id":"1",
+        "title":"Unlock the Full Potential of Your Business with Drupal",
+        "richtext":" In summary, Drupal offers unparalleled flexibility and customizability, robust security features, and excellent content management capabilities, making it an ideal choice for businesses looking to create a powerful online presence. With its scalability and integration options, Drupal can grow alongside your business and adapt to your evolving needs. Ready to transform your digital experience?"
+     }
+    
+  ]
+}
